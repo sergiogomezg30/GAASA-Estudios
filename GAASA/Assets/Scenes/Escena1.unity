@@ -511,7 +511,7 @@ GameObject:
   - component: {fileID: 1074253466}
   - component: {fileID: 1074253465}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: ButtonSalir
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -644,7 +644,7 @@ GameObject:
   - component: {fileID: 1199511366}
   - component: {fileID: 1199511365}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: ButtonOpciones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -898,7 +898,7 @@ GameObject:
   - component: {fileID: 1522728848}
   - component: {fileID: 1522728847}
   m_Layer: 0
-  m_Name: VillaConocida
+  m_Name: "FondoMen\xFA"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1144,7 +1144,7 @@ GameObject:
   - component: {fileID: 1767558522}
   - component: {fileID: 1767558521}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: ButtonControles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1356,7 +1356,7 @@ GameObject:
   - component: {fileID: 2037357398}
   - component: {fileID: 2037357397}
   m_Layer: 5
-  m_Name: Button
+  m_Name: ButtonJugar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
