@@ -17,9 +17,10 @@ public class DialogueSystem : MonoBehaviour
 
     private bool isTyping;
 
-    //falta por poner las referencias al script de control del personaje para inhabilitar todo mientras estamos hablando
-    //[SerializeField] private InteractionsHandler interactionsHandler;
     public int framesEntreLetras = 3;
+
+    //falta por poner las referencias al script de control del personaje para inhabilitar todo mientras estamos hablando
+    [SerializeField] private InteractionsHandler interactionsHandler;
 
     void Awake()
     {
@@ -78,6 +79,7 @@ public class DialogueSystem : MonoBehaviour
     private void FinishDialogue()
     {
         dialoguePanel.SetActive(false);
+        interactionsHandler.isInAnInteraction = false;
     }
 
     IEnumerator TypeSentence()

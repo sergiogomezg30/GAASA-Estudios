@@ -7,8 +7,11 @@ public class InteractionsHandler : MonoBehaviour
     private Camera cam;
     private Interactable actualInteraction;
 
+    public bool isInAnInteraction;
+
     void Start()
     {
+        isInAnInteraction = false;
         cam = GetComponent<Camera>();
     }
 
@@ -17,10 +20,11 @@ public class InteractionsHandler : MonoBehaviour
         if (Input.GetMouseButtonDown(0)) {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(ray, out RaycastHit hitInfo)) {
+            if (!isInAnInteraction && Physics.Raycast(ray, out RaycastHit hitInfo)) {
                 actualInteraction = hitInfo.collider.gameObject.GetComponent<Interactable>();
                 if (actualInteraction != null) {
                     actualInteraction.Interact();
+                    isInAnInteraction = true;
                 }
             }
         }
