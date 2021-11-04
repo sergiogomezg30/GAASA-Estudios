@@ -30,6 +30,7 @@ public class NPC : Interactable
 
     public override void Interact()
     {
+        DialogueSystem.Instance.AddNewDialogue(dialogueNPC, nameNPC);
         Debug.Log("I am " + nameNPC + " and I have " + dialogueNPC.Length + "sentences");
     }
 }
