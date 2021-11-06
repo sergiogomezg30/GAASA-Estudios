@@ -21,6 +21,7 @@ public class DialogueSystem : MonoBehaviour
 
     //falta por poner las referencias al script de control del personaje para inhabilitar todo mientras estamos hablando
     [SerializeField] private InteractionsHandler interactionsHandler;
+    [SerializeField] private controlPersonaje controlPlayer;
 
     void Awake()
     {
@@ -56,6 +57,8 @@ public class DialogueSystem : MonoBehaviour
     
     private void CreateDialogue()
     {
+        controlPlayer.enabled = false;  //desactivar control personaje hasta que se acabe de hablar
+
         dialogueText.text = "";
         nameText.text = npcName;
 
@@ -80,6 +83,8 @@ public class DialogueSystem : MonoBehaviour
     {
         dialoguePanel.SetActive(false);
         interactionsHandler.isInAnInteraction = false;
+
+        controlPlayer.enabled = true;   //volver activar control de personaje
     }
 
     IEnumerator TypeSentence()

@@ -14,7 +14,7 @@ public class controlPersonaje : MonoBehaviour
         target = transform.position;
     }
     
-    void Update()
+    void LateUpdate()
     {
 
         if(Input.GetMouseButtonDown(0)){
