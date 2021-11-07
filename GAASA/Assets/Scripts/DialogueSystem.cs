@@ -57,7 +57,7 @@ public class DialogueSystem : MonoBehaviour
     
     private void CreateDialogue()
     {
-        controlPlayer.enabled = false;  //desactivar control personaje hasta que se acabe de hablar
+        controlPlayer.canMove = false;  //desactivar control personaje hasta que se acabe de hablar
 
         dialogueText.text = "";
         nameText.text = npcName;
@@ -82,9 +82,8 @@ public class DialogueSystem : MonoBehaviour
     private void FinishDialogue()
     {
         dialoguePanel.SetActive(false);
-        interactionsHandler.isInAnInteraction = false;
 
-        controlPlayer.enabled = true;   //volver activar control de personaje
+        interactionsHandler.InteractionFinished();
     }
 
     IEnumerator TypeSentence()

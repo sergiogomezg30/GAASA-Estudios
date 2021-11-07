@@ -7,6 +7,8 @@ public class NPC : Interactable
     [SerializeField] private string nameNPC;
     [SerializeField] private string[] dialogueNPC;
 
+    [SerializeField] private InteractionsHandler interactionsHandler;
+
     private void Start()
     {
         StartNPC();
@@ -18,14 +20,18 @@ public class NPC : Interactable
         interactionType = InteractionType.Click;
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        //Debug.Log("kk de vaca");
+        if (interactionsHandler.GetActualInteraction() == this) {
+            interactionsHandler.StartInteraction();
+            player.SetTarget(player.transform.position);    //para que el personaje no haga el intento de seguir avanzando
+        }
+    }
+
     public override string GetDescription()
     {
         return "Click me to Talk!";
-    }
-
-    public override InteractionType GetInteractionType()
-    {
-        return interactionType;
     }
 
     public override void Interact()

@@ -6,18 +6,20 @@ public class controlPersonaje : MonoBehaviour
 {
 
     public float speed;
+    public bool canMove;
+
     Vector3 target;
 
     
     void Start()
     {
+        canMove = true;
         target = transform.position;
     }
     
     void LateUpdate()
     {
-
-        if(Input.GetMouseButtonDown(0)){
+        if(Input.GetMouseButtonDown(0) && canMove){
             target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             target.z = 0f;
         }
@@ -35,5 +37,10 @@ public class controlPersonaje : MonoBehaviour
         {
             target = transform.position;
         }
+    }
+
+    public void SetTarget(Vector3 newTarget)
+    {
+        target = newTarget;
     }
 }
