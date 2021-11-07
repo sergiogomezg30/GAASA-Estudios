@@ -10,6 +10,8 @@ public class controlPersonaje : MonoBehaviour
 
     Vector3 target;
 
+    [SerializeField] private InteractionsHandler interactionsHandler;
+
     
     void Start()
     {
@@ -22,6 +24,10 @@ public class controlPersonaje : MonoBehaviour
         if(Input.GetMouseButtonDown(0) && canMove){
             target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             target.z = 0f;
+
+            if (interactionsHandler.GetActualInteraction() != null && !interactionsHandler.GetActualInteraction().GetTriggerCollider().bounds.Contains(target)) {
+                interactionsHandler.NullifyActualInteraction();
+            }
         }
     }
 
@@ -41,6 +47,6 @@ public class controlPersonaje : MonoBehaviour
 
     public void SetTarget(Vector3 newTarget)
     {
-        target = newTarget;
+        target = new Vector3(newTarget.x, newTarget.y, 0);  //la z a 0 siempre :)
     }
 }

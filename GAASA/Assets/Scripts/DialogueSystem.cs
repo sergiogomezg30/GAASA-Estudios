@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class DialogueSystem : MonoBehaviour
 {
     public static DialogueSystem Instance;
-    public GameObject dialoguePanel;
+
+    public GameObject uiDialogue;
+    private GameObject dialoguePanel;
 
     private string npcName;
     private List<string> dialogueLines = new List<string>();
@@ -19,18 +21,18 @@ public class DialogueSystem : MonoBehaviour
 
     public int framesEntreLetras = 3;
 
-    //falta por poner las referencias al script de control del personaje para inhabilitar todo mientras estamos hablando
     [SerializeField] private InteractionsHandler interactionsHandler;
-    [SerializeField] private controlPersonaje controlPlayer;
 
     void Awake()
     {
+        dialoguePanel = uiDialogue.transform.Find("Dialogue").gameObject;
+
         continueButton = dialoguePanel.transform.Find("Continue").GetComponent<Button>();
         dialogueText = dialoguePanel.transform.Find("Text").GetComponent<Text>();
         nameText = dialoguePanel.transform.Find("Name").GetChild(0).GetComponent<Text>();
 
         continueButton.onClick.AddListener(delegate { ContinueDialogue(); });
-        dialoguePanel.SetActive(false);
+        uiDialogue.SetActive(false);
 
         isTyping = false;
 
@@ -57,12 +59,10 @@ public class DialogueSystem : MonoBehaviour
     
     private void CreateDialogue()
     {
-        controlPlayer.canMove = false;  //desactivar control personaje hasta que se acabe de hablar
-
         dialogueText.text = "";
         nameText.text = npcName;
 
-        dialoguePanel.SetActive(true);
+        uiDialogue.SetActive(true);
 
         StartCoroutine(TypeSentence());
     }
@@ -81,7 +81,7 @@ public class DialogueSystem : MonoBehaviour
 
     private void FinishDialogue()
     {
-        dialoguePanel.SetActive(false);
+        uiDialogue.SetActive(false);
 
         interactionsHandler.InteractionFinished();
     }

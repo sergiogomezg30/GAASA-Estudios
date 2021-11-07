@@ -32,8 +32,7 @@ public class InteractionsHandler : MonoBehaviour
                         StartInteraction();
                     }
                     else { 
-                        Vector3 target2D = new Vector3(targetPosition.x, targetPosition.y, 0);
-                        player.SetTarget(target2D);
+                        player.SetTarget(targetPosition);
                     }
                 }
             }
@@ -44,20 +43,27 @@ public class InteractionsHandler : MonoBehaviour
     {
         return actualInteraction;
     }
+    public void NullifyActualInteraction()
+    {
+        actualInteraction = null;
+    }
 
     public void StartInteraction()
     {
         isInAnInteraction = true;
+
+        player.canMove = false;  //desactivar control personaje hasta que se acabe de interactuar
 
         actualInteraction.GetPhysicalCollider().enabled = true; //puedes chocarte solamente cuando vas hacia ello, si no lo atraviesas
         actualInteraction.Interact();
     }
     public void InteractionFinished()
     {
+        player.canMove = true;
+
         actualInteraction.GetPhysicalCollider().enabled = false;
 
         isInAnInteraction = false;
         actualInteraction = null;
-        player.canMove = true;
     }
 }
