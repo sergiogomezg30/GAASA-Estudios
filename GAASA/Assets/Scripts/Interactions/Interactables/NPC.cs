@@ -18,6 +18,7 @@ public class NPC : Interactable
     {
         hasInteracted = false;
         interactionType = InteractionType.Click;
+        Debug.Log(gameObject.GetComponent<SpriteRenderer>().sprite != null);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -36,7 +37,7 @@ public class NPC : Interactable
 
     public override void Interact()
     {
-        DialogueSystem.Instance.AddNewDialogue(dialogueNPC, nameNPC);
+        DialogueSystem.Instance.AddNewDialogue(dialogueNPC, nameNPC, gameObject.GetComponent<SpriteRenderer>());
         Debug.Log("I am " + nameNPC + " and I have " + dialogueNPC.Length + "sentences");
     }
 }

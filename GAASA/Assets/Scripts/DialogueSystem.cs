@@ -9,9 +9,11 @@ public class DialogueSystem : MonoBehaviour
 
     public GameObject uiDialogue;
     private GameObject dialoguePanel;
+    private Image image1, image2;
 
     private string npcName;
     private List<string> dialogueLines = new List<string>();
+    private SpriteRenderer npcSprite;
 
     private Button continueButton;
     private Text dialogueText, nameText;
@@ -22,9 +24,13 @@ public class DialogueSystem : MonoBehaviour
     public int framesEntreLetras = 3;
 
     [SerializeField] private InteractionsHandler interactionsHandler;
+    [SerializeField] private SpriteRenderer playerSprite;
 
     void Awake()
     {
+        image1 = uiDialogue.transform.GetChild(1).GetComponent<Image>();
+        image2 = uiDialogue.transform.GetChild(2).GetComponent<Image>();
+
         dialoguePanel = uiDialogue.transform.Find("Dialogue").gameObject;
 
         continueButton = dialoguePanel.transform.Find("Continue").GetComponent<Button>();
@@ -44,7 +50,7 @@ public class DialogueSystem : MonoBehaviour
         }
     }
 
-    public void AddNewDialogue(string[] lines, string npcName)
+    public void AddNewDialogue(string[] lines, string npcName, SpriteRenderer npcSprite)
     {
         dialogueIndex = 0;
 
@@ -52,6 +58,7 @@ public class DialogueSystem : MonoBehaviour
         dialogueLines.AddRange(lines);
 
         this.npcName = npcName;
+        this.npcSprite = npcSprite;
 
         Debug.Log(dialogueLines.Count + "lines");
         CreateDialogue();
@@ -61,6 +68,20 @@ public class DialogueSystem : MonoBehaviour
     {
         dialogueText.text = "";
         nameText.text = npcName;
+
+        image1.sprite = playerSprite.sprite;
+        image2.sprite = npcSprite.sprite;
+
+        float relation1 = image1.sprite.rect.height / image1.sprite.rect.width;
+        float relation2 = image2.sprite.rect.height / image2.sprite.rect.width;
+
+        image1.gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(100, relation1 * 100);
+        image2.gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(100, relation2 * 100);
+
+        if (playerSprite.flipX)
+            image1.gameObject.GetComponent<RectTransform>().localScale = new Vector3(-1, 1, 1);
+        if (npcSprite.flipX)
+            image2.gameObject.GetComponent<RectTransform>().localScale = new Vector3(-1, 1, 1);
 
         uiDialogue.SetActive(true);
 
