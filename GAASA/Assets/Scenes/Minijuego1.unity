@@ -367,7 +367,9 @@ MonoBehaviour:
   - {fileID: 4915504427314066026, guid: 1351d483fabab544b87112885f6bac08, type: 3}
   - {fileID: 7583903772274029410, guid: 8085ebfaf87e1ec439f73dbe5377b412, type: 3}
   - {fileID: 3265869287596941511, guid: 6fd7ec4cfb178b14dabc77f1e9abf218, type: 3}
-  timer: 5
+  timer: 4
+  spawnerMin: -5
+  spawnerMax: 5
 --- !u!4 &183890452
 Transform:
   m_ObjectHideFlags: 0

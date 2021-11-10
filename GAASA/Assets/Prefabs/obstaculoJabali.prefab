@@ -98,7 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dmg: 3
   spd: 10
-  timeToDespawn: 1
+  timeToDespawn: 5
 --- !u!61 &4915504427314066006
 BoxCollider2D:
   m_ObjectHideFlags: 0
