@@ -6,6 +6,7 @@ TagManager:
   tags:
   - cielo
   - Coche
+  - Collider
   layers:
   - Default
   - TransparentFX
