@@ -7,7 +7,7 @@ public class coche : MonoBehaviour
 {
     public int carHP = 10;
     public Text distanceDisplay;
-    public int metersDriven = 0;
+    public float timeElapsed = 0;
 
     //He creado un Scr nuevo para coche en lugar de simplemente añadir
     //la variable HP a controlPersonaje para poder gestionar otros aspectos
@@ -19,13 +19,14 @@ public class coche : MonoBehaviour
 
     void Update()
     {
-        distanceDisplay.text = metersDriven.ToString();
+        distanceDisplay.text = timeElapsed.ToString();
+        timeElapsed += Time.deltaTime;
 
         if (carHP <=0)
         {
             Destroy(gameObject);
         }
 
-        metersDriven +=1;
+        
     }
 }
