@@ -12,4 +12,10 @@ public class CambiarEscena : MonoBehaviour
         SceneManager.LoadScene(SceneName);
     }
 
+    public void CerrarJuego()
+    {
+        Application.Quit();
+        Debug.Log("Salir");
+    }
+
 }
