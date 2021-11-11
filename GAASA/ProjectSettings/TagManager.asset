@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - cielo
+<<<<<<< Updated upstream
+=======
+  - Coche
+  - Collider
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
