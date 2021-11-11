@@ -7,6 +7,8 @@ public class NPC : Interactable
     [SerializeField] private string nameNPC;
     [SerializeField] private string[] dialogueNPC;
 
+    [SerializeField] private InteractionsHandler interactionsHandler;
+
     private void Start()
     {
         StartNPC();
@@ -16,6 +18,16 @@ public class NPC : Interactable
     {
         hasInteracted = false;
         interactionType = InteractionType.Click;
+        Debug.Log(gameObject.GetComponent<SpriteRenderer>().sprite != null);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        //Debug.Log("kk de vaca");
+        if (interactionsHandler.GetActualInteraction() == this) {
+            interactionsHandler.StartInteraction();
+            player.SetTarget(player.transform.position);    //para que el personaje no haga el intento de seguir avanzando
+        }
     }
 
     public override string GetDescription()
@@ -23,14 +35,9 @@ public class NPC : Interactable
         return "Click me to Talk!";
     }
 
-    public override InteractionType GetInteractionType()
-    {
-        return interactionType;
-    }
-
     public override void Interact()
     {
-        DialogueSystem.Instance.AddNewDialogue(dialogueNPC, nameNPC);
+        DialogueSystem.Instance.AddNewDialogue(dialogueNPC, nameNPC, gameObject.GetComponent<SpriteRenderer>());
         Debug.Log("I am " + nameNPC + " and I have " + dialogueNPC.Length + "sentences");
     }
 }

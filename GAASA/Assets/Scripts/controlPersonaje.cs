@@ -6,20 +6,28 @@ public class controlPersonaje : MonoBehaviour
 {
 
     public float speed;
+    public bool canMove;
+
     Vector3 target;
+
+    [SerializeField] private InteractionsHandler interactionsHandler;
 
     
     void Start()
     {
+        canMove = true;
         target = transform.position;
     }
     
-    void Update()
+    void LateUpdate()
     {
-
-        if(Input.GetMouseButtonDown(0)){
+        if(Input.GetMouseButtonDown(0) && canMove){
             target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             target.z = 0f;
+
+            if (interactionsHandler.GetActualInteraction() != null && !interactionsHandler.GetActualInteraction().GetTriggerCollider().bounds.Contains(target)) {
+                interactionsHandler.NullifyActualInteraction();
+            }
         }
     }
 
@@ -35,5 +43,10 @@ public class controlPersonaje : MonoBehaviour
         {
             target = transform.position;
         }
+    }
+
+    public void SetTarget(Vector3 newTarget)
+    {
+        target = new Vector3(newTarget.x, newTarget.y, 0);  //la z a 0 siempre :)
     }
 }

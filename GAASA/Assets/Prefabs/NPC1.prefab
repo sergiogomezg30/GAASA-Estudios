@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3663891504013706242}
   - component: {fileID: 3663891504013706245}
   - component: {fileID: 3663891504013706244}
+  - component: {fileID: -507209082999825595}
   m_Layer: 0
   m_Name: NPC1
   m_TagString: Untagged
@@ -93,9 +94,9 @@ BoxCollider:
   m_GameObject: {fileID: 3663891504013706241}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.025}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3663891504013706244
 MonoBehaviour:
@@ -109,8 +110,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9702c49cdb3cf44aad774c8b7a8aca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  physicalCollider: {fileID: 3663891504013706245}
+  triggerCollider: {fileID: -507209082999825595}
+  player: {fileID: 0}
   hasInteracted: 0
   nameNPC: Eustaquio
   dialogueNPC:
   - Buenas
   - "Hace un bonito d\xEDa hoy"
+  interactionsHandler: {fileID: 0}
+--- !u!65 &-507209082999825595
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3663891504013706241}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
