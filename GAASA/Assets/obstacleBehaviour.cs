@@ -6,15 +6,7 @@ public class obstacleBehaviour : MonoBehaviour
 {
     public int dmg = 1;
     public float spd;
-    [SerializeField]
-    private int timeToDespawn = 5;
 
-    //El objeto se autodestruye en n segundos para no saturar la escena
-    void Star()
-    {
-        Destroy(gameObject, timeToDespawn);
-
-    }
     // Update is called once per frame
     void Update()
     {
@@ -30,7 +22,13 @@ public class obstacleBehaviour : MonoBehaviour
             other.GetComponent<coche>().carHP -= dmg;
             Debug.Log("El coche ha sufrido daño");
             Destroy(gameObject);
-        } 
-        
+        }
+
+        if (other.CompareTag("Collider"))
+        {
+            //Evitamos saturar la escena
+            Destroy(gameObject);
+        }
+
     }
 }
