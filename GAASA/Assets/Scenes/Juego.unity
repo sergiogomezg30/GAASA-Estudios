@@ -1735,25 +1735,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 862242522}
     m_Modifications:
+    - target: {fileID: -507209082999825595, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
+      propertyPath: m_Size.x
+      value: 2.05
+      objectReference: {fileID: 0}
+    - target: {fileID: -507209082999825595, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
+      propertyPath: m_Size.y
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3663891504013706241, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
       propertyPath: m_Name
-      value: NPC1 (3)
+      value: NPC4
       objectReference: {fileID: 0}
+    - target: {fileID: 3663891504013706242, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8d766efb594515541a8459b83dfc1009, type: 3}
     - target: {fileID: 3663891504013706242, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3663891504013706242, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
       propertyPath: m_Color.g
-      value: 0.41340256
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3663891504013706242, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3663891504013706243, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663891504013706243, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3663891504013706243, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1831,6 +1847,14 @@ PrefabInstance:
       propertyPath: dialogueNPC.Array.data[4]
       value: "Hace un bonito d\xEDa hoy"
       objectReference: {fileID: 0}
+    - target: {fileID: 3663891504013706245, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
+      propertyPath: m_Size.x
+      value: 2.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663891504013706245, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
+      propertyPath: m_Size.y
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
 --- !u!1001 &1722150305
@@ -1840,17 +1864,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 862242522}
     m_Modifications:
+    - target: {fileID: -507209082999825595, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
+      propertyPath: m_Size.x
+      value: 2.05
+      objectReference: {fileID: 0}
+    - target: {fileID: -507209082999825595, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
+      propertyPath: m_Size.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -507209082999825595, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -507209082999825595, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -507209082999825595, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3663891504013706241, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
       propertyPath: m_Name
       value: NPC1
       objectReference: {fileID: 0}
     - target: {fileID: 3663891504013706242, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 09e95f836cf15e44ea6b35c6473f43ca, type: 3}
+    - target: {fileID: 3663891504013706242, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3663891504013706242, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3663891504013706242, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
       propertyPath: m_Color.r
@@ -1859,6 +1907,10 @@ PrefabInstance:
     - target: {fileID: 3663891504013706243, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663891504013706243, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3663891504013706243, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1906,7 +1958,7 @@ PrefabInstance:
       objectReference: {fileID: 328892906}
     - target: {fileID: 3663891504013706244, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
       propertyPath: nameNPC
-      value: Juan
+      value: Juana
       objectReference: {fileID: 0}
     - target: {fileID: 3663891504013706244, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
       propertyPath: interactionsHandler
@@ -1919,6 +1971,26 @@ PrefabInstance:
     - target: {fileID: 3663891504013706244, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
       propertyPath: dialogueNPC.Array.data[1]
       value: "Soy consciente de que me vais a borrar despu\xE9s del test :("
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663891504013706245, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
+      propertyPath: m_Size.x
+      value: 2.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663891504013706245, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
+      propertyPath: m_Size.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663891504013706245, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663891504013706245, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663891504013706245, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
+      propertyPath: m_Center.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
