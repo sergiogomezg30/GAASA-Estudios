@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class coche : MonoBehaviour
 {
     public int carHP = 10;
-    public Text distanceDisplay;
+    public Slider slider;
     public float timeElapsed = 0;
 
     //He creado un Scr nuevo para coche en lugar de simplemente añadir
@@ -19,7 +19,7 @@ public class coche : MonoBehaviour
 
     void Update()
     {
-        distanceDisplay.text = timeElapsed.ToString();
+        slider.value = timeElapsed;
         timeElapsed += Time.deltaTime;
 
         if (carHP <=0)
