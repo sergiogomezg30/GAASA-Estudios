@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - cielo
+  - suelo
   layers:
   - Default
   - TransparentFX
