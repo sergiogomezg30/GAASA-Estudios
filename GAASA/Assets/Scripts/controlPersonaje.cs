@@ -22,8 +22,15 @@ public class controlPersonaje : MonoBehaviour
     void LateUpdate()
     {
         if(Input.GetMouseButtonDown(0) && canMove){
-            target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            target.z = 0f;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out RaycastHit hitInfo)) {
+                if (hitInfo.collider.gameObject.CompareTag("suelo")) {
+                    target = hitInfo.point;
+                }
+            }
+
+                //target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                //target.z = 0f;
 
             if (interactionsHandler.GetActualInteraction() != null && !interactionsHandler.GetActualInteraction().GetTriggerCollider().bounds.Contains(target)) {
                 interactionsHandler.NullifyActualInteraction();
@@ -36,7 +43,7 @@ public class controlPersonaje : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, target, speed*Time.deltaTime);
     }
 
-    void OnCollisionEnter2D(Collision2D other)
+    void OnCollisionEnter(Collision other)
     {
 
         if(other.gameObject.CompareTag("cielo"))
