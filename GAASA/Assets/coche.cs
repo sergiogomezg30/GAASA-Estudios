@@ -30,6 +30,25 @@ public class coche : MonoBehaviour
             objetos[0].SetActive(true);
             objetos[1].SetActive(true);
         }
-        
+
+        //Control de dialogos segun tiempo transcurrido
+
+        if (timeElapsed >= 2)
+        {
+            objetos[2].SetActive(true);
+        }
+
+        if (timeElapsed >= 6)
+        {
+            objetos[2].SetActive(false);
+            objetos[3].SetActive(true);
+        }
+
+        if (timeElapsed >= 10)
+        {
+            objetos[3].SetActive(false);
+        }
+
+
     }
 }
