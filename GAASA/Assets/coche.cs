@@ -7,15 +7,11 @@ public class coche : MonoBehaviour
 {
     public int carHP = 10;
     public Slider slider;
-    public float timeElapsed = 0;
+    private float timeElapsed = 0;
+    public GameObject[] objetos;
+    [SerializeField]
+    private float manadaJabalies = 90;
 
-    //He creado un Scr nuevo para coche en lugar de simplemente añadir
-    //la variable HP a controlPersonaje para poder gestionar otros aspectos
-    //cuando toque pulir a traves de este script. Por ejemplo, el coche podria
-    //tener varios sprites y segun como de dañado este se muestre uno u otro.
-    //el coche tambien podria tener un generador de particulas en el tubo de escape
-    //que podemos gestionar en este script (sale mas si se mueve hacia delante, 
-    //implicando que acelera, se spawnean menos particulas si vas hacia atras)
 
     void Update()
     {
@@ -27,6 +23,13 @@ public class coche : MonoBehaviour
             Destroy(gameObject);
         }
 
+
+        //Si el jugador ha sobrevivido durante al menos 1 minuto y medio, una manada de jabalies entorpecera el paso
+        if (timeElapsed >= manadaJabalies)
+        {
+            objetos[0].SetActive(true);
+            objetos[1].SetActive(true);
+        }
         
     }
 }
