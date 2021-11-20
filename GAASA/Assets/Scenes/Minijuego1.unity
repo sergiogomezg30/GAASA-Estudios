@@ -235,6 +235,8 @@ MonoBehaviour:
   carHP: 10
   slider: {fileID: 978122984}
   shakeOnHit: {fileID: 2067977311}
+  loseShake: {fileID: 2067977311}
+  explosion: {fileID: 1027486390770233865, guid: 2cc42873f81c3084a9b48b1b0263bc6c, type: 3}
   objetos:
   - {fileID: 521412685}
   - {fileID: 1703269195}

@@ -8,6 +8,8 @@ public class coche : MonoBehaviour
     public int carHP = 10;
     public Slider slider;
     public Animator shakeOnHit;
+    public Animator loseShake;
+    public ParticleSystem explosion;
 
     private float timeElapsed = 0;
     public GameObject[] objetos;
@@ -22,6 +24,9 @@ public class coche : MonoBehaviour
 
         if (carHP <=0)
         {
+            
+            loseShake.SetTrigger("loseShake");
+            Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
 
         }
