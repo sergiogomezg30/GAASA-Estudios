@@ -7,6 +7,8 @@ public class coche : MonoBehaviour
 {
     public int carHP = 10;
     public Slider slider;
+    public Animator shakeOnHit;
+
     private float timeElapsed = 0;
     public GameObject[] objetos;
     [SerializeField]
@@ -21,6 +23,7 @@ public class coche : MonoBehaviour
         if (carHP <=0)
         {
             Destroy(gameObject);
+
         }
 
 
@@ -50,5 +53,10 @@ public class coche : MonoBehaviour
         }
 
 
+    }
+
+    public void Shake()
+    {
+        shakeOnHit.SetTrigger("shake");
     }
 }

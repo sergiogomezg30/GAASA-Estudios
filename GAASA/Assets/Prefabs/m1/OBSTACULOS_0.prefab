@@ -98,6 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dmg: 2
   spd: 5
+  shakeOnHit: {fileID: 0}
 --- !u!61 &7973665468880893312
 BoxCollider2D:
   m_ObjectHideFlags: 0
