@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class cursor : MonoBehaviour
 {
-    public GameObject clickEffect;
+    public ParticleSystem clickEffect;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +19,7 @@ public class cursor : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            Instantiate(clickEffect, transform.position, Quaternion.identity);
+            clickEffect.Play();
         }
     }
 }
