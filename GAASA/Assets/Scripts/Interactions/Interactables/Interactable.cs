@@ -11,17 +11,41 @@ public abstract class Interactable : MonoBehaviour
 
     [SerializeField] protected BoxCollider physicalCollider;
     [SerializeField] protected BoxCollider triggerCollider;
-    [SerializeField] protected controlPersonaje player;
+
+    protected controlPersonaje player;
+    protected InteractionsHandler interactionsHandler;
+
     protected InteractionType interactionType;
-    public bool hasInteracted;
+    [HideInInspector] public bool hasInteracted;
 
     ////////////Abstract methods////////////
     public abstract string GetDescription();
     public abstract void Interact();
     ////////////////////////////////////////
-    
+
 
     /////////////Regular methods////////////
+    //privates
+    private void OnTriggerEnter(Collider other)
+    {
+        if (interactionsHandler.GetActualInteraction() == this)
+        {
+            interactionsHandler.StartInteraction();
+            player.SetTarget(player.transform.position);    //para que el personaje no haga el intento de seguir avanzando
+        }
+    }
+
+    //protecteds
+    protected virtual void StartInteractable()  //this method must be called in the Start Unity functions
+    {
+        hasInteracted = false;
+        interactionType = InteractionType.Click;
+
+        interactionsHandler = GameObject.Find("Main Camera").GetComponent<InteractionsHandler>();
+        player = GameObject.Find("Player").GetComponent<controlPersonaje>();
+    }
+
+    //publics
     public InteractionType GetInteractionType()
     {
         return interactionType;
