@@ -6,25 +6,26 @@ public class ThinkFutbol : MonoBehaviour
 {
     [SerializeField] private PorteriaController porteria;
     [SerializeField] private GameObject pelota;
-    private float pelotaSpeed = 1f;
+    private Vector3 originPosPelota;
     private Vector3 pelotaTarget;
+    public float pelotaSpeed = 20f;
 
     private void Start()
     {
-        pelotaTarget = pelota.transform.position;
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.L)) {
-            Shoot();
-        }
+        originPosPelota = pelota.transform.position;
+        pelotaTarget = originPosPelota;
     }
 
     public void Shoot()
     {
         pelotaTarget = porteria.RandPosToShoot().transform.position;
         Debug.Log("tornado de fuego a " + pelotaTarget);
+    }
+
+    public void ResetShot()
+    {
+        pelota.transform.position = originPosPelota;
+        pelotaTarget = originPosPelota;
     }
 
     private void FixedUpdate()

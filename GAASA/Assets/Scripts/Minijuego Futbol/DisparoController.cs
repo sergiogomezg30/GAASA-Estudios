@@ -13,6 +13,12 @@ public class DisparoController : MonoBehaviour
 
     private void OnMouseDown()
     {
+        porteriaController.PorteroPara(this);
         Debug.Log(gameObject.name);
+    }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        Debug.Log("GOL!!!");
     }
 }

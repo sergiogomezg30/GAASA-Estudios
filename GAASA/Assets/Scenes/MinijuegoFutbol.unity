@@ -219,22 +219,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &817289
-CircleCollider2D:
+--- !u!135 &817289
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 817285}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.00000023841858}
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
+  m_Center: {x: 0, y: 0.00000023841858, z: 0}
 --- !u!1 &260958665
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,6 +243,7 @@ GameObject:
   - component: {fileID: 260958668}
   - component: {fileID: 260958667}
   - component: {fileID: 260958666}
+  - component: {fileID: 260958669}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -318,6 +316,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 16.21, y: 0, z: 0}
+--- !u!114 &260958669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260958665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cad52f9f2c57f8044b372fe222fab507, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &784033442
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,22 +424,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &784033446
-CircleCollider2D:
+--- !u!135 &784033446
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784033442}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.00000023841858}
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
+  m_Center: {x: 0, y: 0.00000023841858, z: 0}
 --- !u!1 &854258785
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,6 +447,7 @@ GameObject:
   m_Component:
   - component: {fileID: 854258787}
   - component: {fileID: 854258786}
+  - component: {fileID: 854258789}
   - component: {fileID: 854258788}
   m_Layer: 0
   m_Name: Pelota
@@ -513,7 +521,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &854258788
+--- !u!135 &854258788
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854258785}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &854258789
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -626,6 +647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   porteria: {fileID: 1530834528}
   pelota: {fileID: 854258785}
+  pelotaSpeed: 10
 --- !u!1 &1265703336
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,22 +744,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &1265703340
-CircleCollider2D:
+--- !u!135 &1265703340
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1265703336}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.00000023841858}
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
+  m_Center: {x: 0, y: 0.00000023841858, z: 0}
 --- !u!1 &1530834527
 GameObject:
   m_ObjectHideFlags: 0
@@ -768,6 +787,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 706e31f2a41bf4a42b9c312839e4087f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  portero: {fileID: 1623114532}
+  porteroSpeed: 15
+  ninoQueDispara: {fileID: 1011276640}
 --- !u!212 &1530834529
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -929,6 +951,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1623114534}
   - component: {fileID: 1623114533}
+  - component: {fileID: 1623114535}
+  - component: {fileID: 1623114536}
   m_Layer: 0
   m_Name: "PorteroNi\xF1o"
   m_TagString: Untagged
@@ -1001,6 +1025,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1623114535
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623114532}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.04, y: 16.47, z: 0.2}
+  m_Center: {x: 0, y: 8.235, z: 0}
+--- !u!114 &1623114536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623114532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40974a3fe528c0844bbc8ed8dd563973, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1976807794
 GameObject:
   m_ObjectHideFlags: 0
@@ -1097,19 +1146,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &1976807798
-CircleCollider2D:
+--- !u!135 &1976807798
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1976807794}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.00000023841858}
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
+  m_Center: {x: 0, y: 0.00000023841858, z: 0}
