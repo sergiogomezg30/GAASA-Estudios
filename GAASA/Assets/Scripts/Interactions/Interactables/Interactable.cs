@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// ESTE CODIGO NO DEBE ESTAR ATADA A NINGUN OBJETO
+/// sirve como base para el resto de codigos que hereden de aquí
+/// como NPC o HaciaMinijuego
+/// </summary>
 public abstract class Interactable : MonoBehaviour
 {
     public enum InteractionType
