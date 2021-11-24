@@ -30,6 +30,9 @@ public class PorteriaController : MonoBehaviour
 
         goles = 0;
         paradas = 0;
+
+        UIMinijuegoFutbolSystem.Instance.SetGolesUI(goles);
+        UIMinijuegoFutbolSystem.Instance.SetParadasUI(paradas);
     }
 
     private void Update()
@@ -76,6 +79,7 @@ public class PorteriaController : MonoBehaviour
     public void GolDeLaIA()
     {
         goles++;
+        UIMinijuegoFutbolSystem.Instance.SetGolesUI(goles);
         Debug.Log("GOL!!!");
         Debug.Log("La IA ha metido " + goles + " goles");
     }
@@ -83,6 +87,7 @@ public class PorteriaController : MonoBehaviour
     public void ParadaDelPlayer()
     {
         paradas++;
+        UIMinijuegoFutbolSystem.Instance.SetParadasUI(paradas);
         Debug.Log("Parada");
         Debug.Log("Llevas parados " + paradas + " chutes");
     }
