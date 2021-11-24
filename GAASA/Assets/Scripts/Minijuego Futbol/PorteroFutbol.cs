@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PorteroFutbol : MonoBehaviour
 {
+    [SerializeField] private PorteriaController porteriaController;
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Parada");
+        porteriaController.ParadaDelPlayer();
     }
 }

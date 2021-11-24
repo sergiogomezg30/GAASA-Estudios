@@ -219,8 +219,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!135 &817289
-SphereCollider:
+--- !u!65 &817289
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -230,7 +230,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Size: {x: 1.1, y: 1.1, z: 0.19999999}
   m_Center: {x: 0, y: 0.00000023841858, z: 0}
 --- !u!1 &260958665
 GameObject:
@@ -424,8 +424,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!135 &784033446
-SphereCollider:
+--- !u!65 &784033446
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -435,7 +435,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Size: {x: 1.1, y: 1.1, z: 0.19999999}
   m_Center: {x: 0, y: 0.00000023841858, z: 0}
 --- !u!1 &854258785
 GameObject:
@@ -648,6 +648,7 @@ MonoBehaviour:
   porteria: {fileID: 1530834528}
   pelota: {fileID: 854258785}
   pelotaSpeed: 10
+  hasShot: 0
 --- !u!1 &1265703336
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,8 +745,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!135 &1265703340
-SphereCollider:
+--- !u!65 &1265703340
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -755,7 +756,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Size: {x: 1.1, y: 1.1, z: 0.19999999}
   m_Center: {x: 0, y: 0.00000023841858, z: 0}
 --- !u!1 &1530834527
 GameObject:
@@ -1050,6 +1051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40974a3fe528c0844bbc8ed8dd563973, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  porteriaController: {fileID: 1530834528}
 --- !u!1 &1976807794
 GameObject:
   m_ObjectHideFlags: 0
@@ -1146,8 +1148,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!135 &1976807798
-SphereCollider:
+--- !u!65 &1976807798
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1157,5 +1159,5 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Size: {x: 1.1, y: 1.1, z: 0.19999999}
   m_Center: {x: 0, y: 0.00000023841858, z: 0}

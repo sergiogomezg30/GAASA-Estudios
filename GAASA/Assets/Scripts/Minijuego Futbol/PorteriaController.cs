@@ -14,6 +14,8 @@ public class PorteriaController : MonoBehaviour
 
     [SerializeField] private ThinkFutbol ninoQueDispara;
 
+    private int goles, paradas;
+
     void Start()
     {
         posiblesDisparos = new List<DisparoController>();
@@ -25,6 +27,9 @@ public class PorteriaController : MonoBehaviour
         clicked = false;
         originPosPortero = portero.transform.position;
         porteroTarget = originPosPortero;
+
+        goles = 0;
+        paradas = 0;
     }
 
     private void Update()
@@ -66,5 +71,19 @@ public class PorteriaController : MonoBehaviour
             porteroTarget = new Vector3(disparoController.transform.position.x, disparoController.transform.position.y - 2.72f, porteroTarget.z);
             clicked = true;
         }
+    }
+
+    public void GolDeLaIA()
+    {
+        goles++;
+        Debug.Log("GOL!!!");
+        Debug.Log("La IA ha metido " + goles + " goles");
+    }
+
+    public void ParadaDelPlayer()
+    {
+        paradas++;
+        Debug.Log("Parada");
+        Debug.Log("Llevas parados " + paradas + " chutes");
     }
 }

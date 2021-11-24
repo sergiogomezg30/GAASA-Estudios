@@ -19,6 +19,6 @@ public class DisparoController : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        Debug.Log("GOL!!!");
+        porteriaController.GolDeLaIA();
     }
 }
