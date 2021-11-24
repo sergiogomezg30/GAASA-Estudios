@@ -50,6 +50,8 @@ public class PorteriaController : MonoBehaviour
 
         portero.transform.position = originPosPortero;
         porteroTarget = originPosPortero;
+
+        clicked = false;
     }
 
     public DisparoController RandPosToShoot()
@@ -59,10 +61,10 @@ public class PorteriaController : MonoBehaviour
 
     public void PorteroPara(DisparoController disparoController)
     {
-        //if (!clicked) {
         //solo mover la 'x' y la 'y' y restar el fallo de altura
+        if (!clicked && ninoQueDispara.hasShot) {
             porteroTarget = new Vector3(disparoController.transform.position.x, disparoController.transform.position.y - 2.72f, porteroTarget.z);
             clicked = true;
-        //}
+        }
     }
 }

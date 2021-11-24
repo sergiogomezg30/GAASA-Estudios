@@ -10,22 +10,30 @@ public class ThinkFutbol : MonoBehaviour
     private Vector3 pelotaTarget;
     public float pelotaSpeed = 20f;
 
+    [HideInInspector] public bool hasShot;
+
     private void Start()
     {
         originPosPelota = pelota.transform.position;
         pelotaTarget = originPosPelota;
+
+        hasShot = false;
     }
 
     public void Shoot()
     {
         pelotaTarget = porteria.RandPosToShoot().transform.position;
         Debug.Log("tornado de fuego a " + pelotaTarget);
+
+        hasShot = true;
     }
 
     public void ResetShot()
     {
         pelota.transform.position = originPosPelota;
         pelotaTarget = originPosPelota;
+
+        hasShot = false;
     }
 
     private void FixedUpdate()
