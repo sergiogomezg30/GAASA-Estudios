@@ -10,7 +10,7 @@ public class minijuegoCables : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (cablesConectados >= 4)
+        if (cablesConectados >= 8)
         {
             botonSalir.SetActive(true);
         }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class movingPart : MonoBehaviour
 {
     public SpriteRenderer wireEnd;
+    public GameObject minijuego;
     Vector3 startPoint;
     Vector3 startPosition;
     // Start is called before the first frame update
@@ -50,6 +51,7 @@ public class movingPart : MonoBehaviour
 
     void Done()
     {
+        minijuego.GetComponent<minijuegoCables>().cablesConectados += 1;
         Destroy(this);
         
     }
