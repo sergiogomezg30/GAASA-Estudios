@@ -5,6 +5,7 @@ using UnityEngine;
 public class EntrarTienda : MonoBehaviour
 {
     public GameObject objetoActivable;
+    public GameObject flechaAtras;
     
     void OnMouseEnter()
     {
@@ -18,5 +19,6 @@ public class EntrarTienda : MonoBehaviour
     void OnMouseDown()
     {
         objetoActivable.SetActive(true);
+        flechaAtras.SetActive(true);
     }
 }
