@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: "Assets/Scenes/Men\xFAInicio.unity"
     guid: 29d03146095c0d142a7ea71247e6d467
   - enabled: 1
-    path: Assets/Scenes/Juego.unity
+    path: Assets/Scenes/JuegoTesting.unity
     guid: c6c4ae28b9fb26f4caee65e3c58f868c
   - enabled: 1
     path: Assets/Scenes/Minijuego1.unity
