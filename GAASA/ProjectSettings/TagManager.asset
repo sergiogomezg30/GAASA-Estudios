@@ -6,6 +6,11 @@ TagManager:
   tags:
   - cielo
   - suelo
+  - carniceria
+  - fruteria
+  - panaderia
+  - pescaderia
+  - verduleria
   layers:
   - Default
   - TransparentFX
