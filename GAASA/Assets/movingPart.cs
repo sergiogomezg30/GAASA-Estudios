@@ -11,8 +11,10 @@ public class movingPart : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void OnMouseDrag()
     {
-        
+        Vector3 newPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        newPos.z = 0;
+        transform.position = newPos;
     }
 }
