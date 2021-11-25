@@ -12,6 +12,7 @@ public class movingPart : MonoBehaviour
     {
         startPoint = transform.parent.position;
         startPosition = transform.position;
+
     }
 
     // Update is called once per frame
@@ -50,6 +51,7 @@ public class movingPart : MonoBehaviour
     void Done()
     {
         Destroy(this);
+        
     }
 
     void UpdateWire(Vector3 newPosition)
