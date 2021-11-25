@@ -7,27 +7,9 @@ public class NPC : Interactable
     [SerializeField] private string nameNPC;
     [SerializeField] private string[] dialogueNPC;
 
-    [SerializeField] private InteractionsHandler interactionsHandler;
-
     private void Start()
     {
-        StartNPC();
-    }
-
-    private void StartNPC()
-    {
-        hasInteracted = false;
-        interactionType = InteractionType.Click;
-        Debug.Log(gameObject.GetComponent<SpriteRenderer>().sprite != null);
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        //Debug.Log("kk de vaca");
-        if (interactionsHandler.GetActualInteraction() == this) {
-            interactionsHandler.StartInteraction();
-            player.SetTarget(player.transform.position);    //para que el personaje no haga el intento de seguir avanzando
-        }
+        StartInteractable();
     }
 
     public override string GetDescription()

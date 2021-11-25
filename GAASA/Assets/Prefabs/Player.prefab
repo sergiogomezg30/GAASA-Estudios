@@ -211,7 +211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   canMove: 0
-  interactionsHandler: {fileID: 0}
+  interactionsHandler: {fileID: 4159018381248362553}
 --- !u!54 &8417965378136047841
 Rigidbody:
   m_ObjectHideFlags: 0
