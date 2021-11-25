@@ -300,5 +300,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObjetoHaciaMinijuego
       objectReference: {fileID: 0}
+    - target: {fileID: 8256823772218148055, guid: 148a0b3afd49ff34dbfdaef349bdb1f5, type: 3}
+      propertyPath: sceneName
+      value: MinijuegoFutbol
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 148a0b3afd49ff34dbfdaef349bdb1f5, type: 3}
