@@ -19,6 +19,20 @@ public class ThinkFutbol : MonoBehaviour
 
         hasShot = false;
     }
+    private void FixedUpdate()
+    {
+        pelota.transform.position = Vector3.MoveTowards(pelota.transform.position, pelotaTarget, pelotaSpeed * Time.deltaTime);
+    }
+
+    /// <summary>
+    /// Esta funcion la he creado para evitar un bug que ocurría a veces
+    /// Era que si parabas y habías llegado un poco justo pues la pelota seguía avanzando
+    /// Por lo que se sumaba una parada y un gol
+    /// </summary>
+    public void StopPelota()
+    {
+        pelotaTarget = pelota.transform.position;
+    }
 
     public void Shoot()
     {
@@ -36,8 +50,4 @@ public class ThinkFutbol : MonoBehaviour
         hasShot = false;
     }
 
-    private void FixedUpdate()
-    {
-        pelota.transform.position = Vector3.MoveTowards(pelota.transform.position, pelotaTarget, pelotaSpeed * Time.deltaTime);
-    }
 }

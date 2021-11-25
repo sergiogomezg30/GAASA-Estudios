@@ -7,14 +7,16 @@ public class PorteriaController : MonoBehaviour
     private List<DisparoController> posiblesDisparos;
 
     [SerializeField] private GameObject portero;
-    public float porteroSpeed = 1f;
+    public float porteroSpeed = 2f;
     private bool clicked;
     private Vector3 porteroTarget;
     private Vector3 originPosPortero;
 
     [SerializeField] private ThinkFutbol ninoQueDispara;
+    private float incrementoSpeed = 0.75f;
 
     private int goles, paradas;
+    private float tiempoEntreRondas;
 
     void Start()
     {
@@ -30,11 +32,15 @@ public class PorteriaController : MonoBehaviour
 
         goles = 0;
         paradas = 0;
+        tiempoEntreRondas = 2f;
 
         UIMinijuegoFutbolSystem.Instance.SetGolesUI(goles);
         UIMinijuegoFutbolSystem.Instance.SetParadasUI(paradas);
     }
 
+    /////////////////////////////////////////////////////
+    //EL UPDATE ES PARA TESTEAR, LUEGO HAY QUE BORRARLO//
+    /////////////////////////////////////////////////////
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.S))
@@ -52,6 +58,24 @@ public class PorteriaController : MonoBehaviour
         portero.transform.position = Vector3.MoveTowards(portero.transform.position, porteroTarget, porteroSpeed * Time.deltaTime);
     }
 
+    IEnumerator AnotherRound(bool parada)
+    {
+        UIMinijuegoFutbolSystem.Instance.Celebrar(parada);
+        yield return new WaitForSeconds(tiempoEntreRondas);
+
+        if (parada) {   //si has parada pues el siguiente disparo va más rápido
+            ninoQueDispara.pelotaSpeed += incrementoSpeed;
+        }
+        else {
+            ninoQueDispara.pelotaSpeed -= incrementoSpeed / 2;  //no se reduce tan rapido para que sea más dificil
+        }
+        Debug.Log("la pelota va a ir a " + ninoQueDispara.pelotaSpeed);
+        ResetAll();
+
+        yield return new WaitForSeconds(0.5f);  //dar un pequeño margen de tiempo para reaccionar y disparar
+        ninoQueDispara.Shoot();
+    }
+
     private void ResetAll()
     {
         ninoQueDispara.ResetShot();
@@ -60,7 +84,10 @@ public class PorteriaController : MonoBehaviour
         porteroTarget = originPosPortero;
 
         clicked = false;
+
+        UIMinijuegoFutbolSystem.Instance.FinCelebracion();
     }
+
 
     public DisparoController RandPosToShoot()
     {
@@ -80,15 +107,16 @@ public class PorteriaController : MonoBehaviour
     {
         goles++;
         UIMinijuegoFutbolSystem.Instance.SetGolesUI(goles);
-        Debug.Log("GOL!!!");
-        Debug.Log("La IA ha metido " + goles + " goles");
+
+        StartCoroutine(AnotherRound(false));
     }
 
     public void ParadaDelPlayer()
     {
         paradas++;
         UIMinijuegoFutbolSystem.Instance.SetParadasUI(paradas);
-        Debug.Log("Parada");
-        Debug.Log("Llevas parados " + paradas + " chutes");
+
+        ninoQueDispara.StopPelota();
+        StartCoroutine(AnotherRound(true));
     }
 }
