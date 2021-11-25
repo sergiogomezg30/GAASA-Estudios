@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MinijuegoFutbol.unity
     guid: ef8d6bc0d3c7872469308bc88abc030a
   - enabled: 0
-    path: Assets/Scenes/controlPersonaje.unity
+    path: Assets/Scenes/ViejasTestScenes/controlPersonaje.unity
     guid: 8ba805b871ae76f4ca179d35afe11d8a
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
