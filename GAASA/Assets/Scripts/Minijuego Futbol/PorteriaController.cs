@@ -13,7 +13,7 @@ public class PorteriaController : MonoBehaviour
     private Vector3 originPosPortero;
 
     [SerializeField] private ThinkFutbol ninoQueDispara;
-    private float incrementoSpeed = 0.75f;
+    private float incrementoSpeed = 1.25f;
 
     private int goles, paradas;
     private float tiempoEntreRondas;
@@ -34,8 +34,8 @@ public class PorteriaController : MonoBehaviour
         paradas = 0;
         tiempoEntreRondas = 2f;
 
-        UIMinijuegoFutbolSystem.Instance.SetGolesUI(goles);
-        UIMinijuegoFutbolSystem.Instance.SetParadasUI(paradas);
+        //UIMinijuegoFutbolSystem.Instance.SetGolesUI(goles);
+        //UIMinijuegoFutbolSystem.Instance.SetParadasUI(paradas);
     }
 
     /////////////////////////////////////////////////////
@@ -49,7 +49,7 @@ public class PorteriaController : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
-            ResetAll();
+            Restart();
         }
     }
 
@@ -73,7 +73,13 @@ public class PorteriaController : MonoBehaviour
         ResetAll();
 
         yield return new WaitForSeconds(0.5f);  //dar un pequeño margen de tiempo para reaccionar y disparar
-        ninoQueDispara.Shoot();
+
+        if (paradas >= 8 || goles >= 8) {   //hemos ganado o perdido
+            FinFutbol();
+        }
+        else {                              //seguimos jugando
+            ninoQueDispara.Shoot();
+        }
     }
 
     private void ResetAll()
@@ -88,6 +94,34 @@ public class PorteriaController : MonoBehaviour
         UIMinijuegoFutbolSystem.Instance.FinCelebracion();
     }
 
+    /// <summary>
+    /// FUNCION PARA TESTEAR
+    /// AL FINAL NO DEBERIA SER LLAMADA POR NADA
+    /// </summary>
+    private void Restart()
+    {
+        UIMinijuegoFutbolSystem.Instance.RestartUI();
+        goles = 0;
+        paradas = 0;
+        ninoQueDispara.pelotaSpeed += -(paradas * incrementoSpeed) + (goles * incrementoSpeed / 2);
+        ResetAll();
+    }
+
+    private void FinFutbol()
+    {
+        if (paradas >= 8) { //hemos ganado parando
+            DialogueSystem.Instance.AddNewDialogue(new string[] { "¡Jobar!", "Pues al final sí que eres buen portero", "¿Mañana otro?" },
+                                                                    "Daniel",
+                                                                    ninoQueDispara.gameObject.GetComponent<SpriteRenderer>(),
+                                                                    true);
+        }
+        else {  //hemos perdido y lo hemos llamada por los goles
+            DialogueSystem.Instance.AddNewDialogue(new string[] { "¡Te he ganado!", "Me ha gustado jugar contigo", "¿Mañana quieres repetir?" },
+                                                                    "Daniel",
+                                                                    ninoQueDispara.gameObject.GetComponent<SpriteRenderer>(),
+                                                                    true);
+        }
+    }
 
     public DisparoController RandPosToShoot()
     {

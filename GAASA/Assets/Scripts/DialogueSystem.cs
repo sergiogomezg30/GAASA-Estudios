@@ -22,6 +22,7 @@ public class DialogueSystem : MonoBehaviour
     private bool isTyping;
 
     public int framesEntreLetras = 3;
+    private bool hardcode = false;  //booleano para poder meter dialogos sin sistema de interacciones
 
     [SerializeField] private InteractionsHandler interactionsHandler;
     [SerializeField] private SpriteRenderer playerSprite;
@@ -50,7 +51,7 @@ public class DialogueSystem : MonoBehaviour
         }
     }
 
-    public void AddNewDialogue(string[] lines, string npcName, SpriteRenderer npcSprite)
+    public void AddNewDialogue(string[] lines, string npcName, SpriteRenderer npcSprite, bool hardcode = false)
     {
         dialogueIndex = 0;
 
@@ -59,6 +60,8 @@ public class DialogueSystem : MonoBehaviour
 
         this.npcName = npcName;
         this.npcSprite = npcSprite;
+
+        this.hardcode = hardcode;
 
         Debug.Log(dialogueLines.Count + "lines");
         CreateDialogue();
@@ -104,7 +107,9 @@ public class DialogueSystem : MonoBehaviour
     {
         uiDialogue.SetActive(false);
 
-        interactionsHandler.InteractionFinished();
+        if (!hardcode) {
+            interactionsHandler.InteractionFinished();
+        }
     }
 
     IEnumerator TypeSentence()
