@@ -6,6 +6,6 @@ using UnityEngine;
 public class BaseDia : ScriptableObject
 {
     public int dia;
-    public string descriptionDia;
+    [TextArea] public string descriptionDia;
     public GastoExtra[] gastosExtras;
 }
