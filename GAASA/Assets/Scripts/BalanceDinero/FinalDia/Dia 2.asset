@@ -10,12 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 72060f3f51605ee429ae53f0f943d3de, type: 3}
-  m_Name: Dia 1
+  m_Name: Dia 2
   m_EditorClassIdentifier: 
-  dia: 1
-  descriptionDia: "Yendo al trabajo se te ha estropeado el coche. Llamas a un compa\xF1ero
-    y te ayuda con los viajes\n\n\xBFArreglas el coche?"
+  dia: 2
+  descriptionDia: 'Estabas reparando unos cables, consigues hacerlo pero te caes
+
+    Al
+    final te toca ir al hospital del pueblo de al lado y te recetan unas medicinas'
   gastosExtras:
   - nombreGasto: Arreglar coche
     coste: 150
-    esOpcional: 1
+    esOpcional: 0
+  - nombreGasto: Medicinas suaves
+    coste: 5
+    esOpcional: 0
+  - nombreGasto: Medicinas fuertes
+    coste: 8
+    esOpcional: 0

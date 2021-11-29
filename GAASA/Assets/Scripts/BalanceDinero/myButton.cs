@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -14,10 +15,21 @@ public class MyButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     private Image actualImage;
     private bool isOn;
 
+    public UnityEvent buttonClick;
+
+    private void Awake()
+    {
+        if (buttonClick == null)
+            buttonClick = new UnityEvent();
+    }
     private void Start()
     {
         actualImage = GetComponent<Image>();
-        isOn = false;
+        isOn = true;
+        if (isOn)
+            actualImage.sprite = onSprite;
+        else
+            actualImage.sprite = offSprite;
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -27,6 +39,8 @@ public class MyButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
             actualImage.sprite = onSprite;
         else
             actualImage.sprite = offSprite;
+
+        buttonClick.Invoke();
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -40,6 +54,5 @@ public class MyButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
             actualImage.sprite = onSprite;
         else
             actualImage.sprite = offSprite;
-
     }
 }
