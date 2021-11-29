@@ -19,3 +19,4 @@ MonoBehaviour:
   - nombreGasto: Arreglar coche
     coste: 150
     esOpcional: 1
+  nextDiaScene: Minijuego1

@@ -8,4 +8,5 @@ public class BaseDia : ScriptableObject
     public int dia;
     [TextArea] public string descriptionDia;
     public GastoExtra[] gastosExtras;
+    public string nextDiaScene;
 }

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FinalDiaSystem : MonoBehaviour
 {
@@ -149,5 +150,10 @@ public class FinalDiaSystem : MonoBehaviour
             dineroRestante += dias[posDiaActual].gastosExtras[0].coste; //lo sumamos ya que es eso que se ahorra
 
         dineroRestanteCant.text = dineroRestante.ToString();
+    }
+
+    public void LoadNextDay()
+    {
+        SceneManager.LoadScene(dias[posDiaActual].nextDiaScene);
     }
 }
