@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class FinalDiaSystem : MonoBehaviour
 {
+    [SerializeField] private GameObject uiBalanceDineroFinalDia;
+
     [SerializeField] private BaseDia[] dias;   //un array para almacenar todos los dias de la semana e ir usandolos
     private int posDiaActual;
 
@@ -104,6 +106,7 @@ public class FinalDiaSystem : MonoBehaviour
         }
 
         CalculateDineroRestante();
+        uiBalanceDineroFinalDia.SetActive(false);
     }
 
     /// <summary>
@@ -149,5 +152,10 @@ public class FinalDiaSystem : MonoBehaviour
     public void LoadNextDay()
     {
         SceneManager.LoadScene(dias[posDiaActual].nextDiaScene);
+    }
+
+    public void ShowFinalDayUI()
+    {
+        uiBalanceDineroFinalDia.SetActive(true);
     }
 }

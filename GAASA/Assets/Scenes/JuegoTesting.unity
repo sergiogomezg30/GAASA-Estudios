@@ -2340,6 +2340,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3663891504013706243, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
   m_PrefabInstance: {fileID: 1327655001}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2009300594 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7492302135209022058, guid: 679ec87b0a79c7a4cb67c3842346c439, type: 3}
+  m_PrefabInstance: {fileID: 440090629}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2029237627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2396,6 +2401,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 440090637}
     - target: {fileID: 7268283846275460618, guid: a49f4b5dcf725f74bb69fcfad409ae03, type: 3}
+      propertyPath: uiFinalDia
+      value: 
+      objectReference: {fileID: 2009300594}
+    - target: {fileID: 7268283846275460618, guid: a49f4b5dcf725f74bb69fcfad409ae03, type: 3}
       propertyPath: ahorrosCant
       value: 
       objectReference: {fileID: 440090635}
@@ -2411,6 +2420,10 @@ PrefabInstance:
       propertyPath: dineroRestanteCant
       value: 
       objectReference: {fileID: 440090630}
+    - target: {fileID: 7268283846275460618, guid: a49f4b5dcf725f74bb69fcfad409ae03, type: 3}
+      propertyPath: uiBalanceDineroFinalDia
+      value: 
+      objectReference: {fileID: 2009300594}
     - target: {fileID: 7268283846275460618, guid: a49f4b5dcf725f74bb69fcfad409ae03, type: 3}
       propertyPath: gastosVariablesCantContainer
       value: 
