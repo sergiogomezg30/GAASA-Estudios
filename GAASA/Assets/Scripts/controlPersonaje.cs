@@ -31,10 +31,15 @@ public class controlPersonaje : MonoBehaviour
 
                 //target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 //target.z = 0f;
-
-            if (interactionsHandler.GetActualInteraction() != null && !interactionsHandler.GetActualInteraction().GetTriggerCollider().bounds.Contains(target)) {
-                interactionsHandler.NullifyActualInteraction();
+            if (interactionsHandler != null) {
+                if (interactionsHandler.GetActualInteraction() != null && !interactionsHandler.GetActualInteraction().GetTriggerCollider().bounds.Contains(target)) {
+                    interactionsHandler.NullifyActualInteraction();
+                }
             }
+            else {
+                Debug.LogWarning("No hay interactionHandler, ¿ES A DREDE?");
+            }
+            
         }
     }
 
