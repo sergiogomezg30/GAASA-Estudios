@@ -26,13 +26,7 @@ public class FinalDiaSystem : MonoBehaviour
     [SerializeField] private TextMeshProUGUI dineroRestanteCant;
 
     void Start()
-    {
-        //para testear, aunque esto deberia estar inicializado en otro lado
-        FinalDiaData.diaActual = 1;
-        FinalDiaData.ahorrosMoney = 1000;
-        FinalDiaData.cocheArreglado = true;
-        ///////////////////////////////////////////////////////////////////
-        
+    {        
         posDiaActual = FinalDiaData.diaActual - 1;
 
         numeroDia.text = "Final Día " + dias[posDiaActual].dia.ToString();
