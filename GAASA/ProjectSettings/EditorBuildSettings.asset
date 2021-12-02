@@ -9,21 +9,24 @@ EditorBuildSettings:
     path: "Assets/Scenes/Men\xFAInicio.unity"
     guid: 29d03146095c0d142a7ea71247e6d467
   - enabled: 1
-    path: Assets/Scenes/JuegoTesting.unity
-    guid: c6c4ae28b9fb26f4caee65e3c58f868c
+    path: Assets/Scenes/Dia1_def.unity
+    guid: e7506089b6c48244a817ae52cd9ced3a
   - enabled: 1
     path: Assets/Scenes/Minijuego1.unity
     guid: 62be9dd39e1adf24481d63888624c578
   - enabled: 1
+    path: Assets/Scenes/Minijuego2.unity
+    guid: 9ef0fd64462759545984a46803c1f6b4
+  - enabled: 1
     path: Assets/Scenes/MinijuegoFutbol.unity
     guid: ef8d6bc0d3c7872469308bc88abc030a
+  - enabled: 0
+    path: Assets/Scenes/JuegoTesting.unity
+    guid: c6c4ae28b9fb26f4caee65e3c58f868c
   - enabled: 0
     path: Assets/Scenes/ViejasTestScenes/controlPersonaje.unity
     guid: 8ba805b871ae76f4ca179d35afe11d8a
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/Dia1_def.unity
-    guid: e7506089b6c48244a817ae52cd9ced3a
   m_configObjects: {}

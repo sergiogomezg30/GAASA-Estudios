@@ -7,6 +7,8 @@ public class onClickEvent : MonoBehaviour
     public GameObject objetoActivable;
     public bool encender = true;
 
+    [SerializeField] private FinalDiaSystem finalDia;
+
     //Pequeño pop para resaltar que el objeto es interactuable
     void OnMouseEnter()
     {
@@ -26,8 +28,10 @@ public class onClickEvent : MonoBehaviour
 
         //Encener/Apagar objeto
         if (encender) { objetoActivable.SetActive(true); }
-        else { objetoActivable.SetActive(false); }
-
+        else { 
+            objetoActivable.SetActive(false);
+            finalDia.ShowFinalDayUI();
+        }
         //Destruir script, para no poder hacer el minijuego varias veces
         Destroy(this);
 

@@ -151,6 +151,7 @@ public class FinalDiaSystem : MonoBehaviour
 
     public void LoadNextDay()
     {
+        FinalDiaData.diaActual = FinalDiaData.diaActual + 1;
         SceneManager.LoadScene(dias[posDiaActual].nextDiaScene);
     }
 
