@@ -167,6 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetoActivable: {fileID: 1242931636}
   encender: 1
+  finalDia: {fileID: 0}
 --- !u!212 &49034708
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6095,7 +6096,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &609641994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13275,6 +13276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetoActivable: {fileID: 1848739401}
   encender: 1
+  finalDia: {fileID: 0}
 --- !u!61 &1592829432
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13442,6 +13444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetoActivable: {fileID: 1046657726}
   encender: 1
+  finalDia: {fileID: 0}
 --- !u!212 &1658578161
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13728,6 +13731,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetoActivable: {fileID: 1766346980}
   encender: 1
+  finalDia: {fileID: 0}
 --- !u!212 &1701818027
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14125,6 +14129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetoActivable: {fileID: 568685559}
   encender: 1
+  finalDia: {fileID: 0}
 --- !u!212 &1843030888
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14459,6 +14464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetoActivable: {fileID: 1292837160}
   encender: 1
+  finalDia: {fileID: 0}
 --- !u!212 &1980704460
 SpriteRenderer:
   m_ObjectHideFlags: 0
