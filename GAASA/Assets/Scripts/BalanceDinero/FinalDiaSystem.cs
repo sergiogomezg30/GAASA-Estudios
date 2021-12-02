@@ -156,6 +156,7 @@ public class FinalDiaSystem : MonoBehaviour
 
     public void ShowFinalDayUI()
     {
+        Debug.Log("kk0");
         uiBalanceDineroFinalDia.SetActive(true);
     }
 }

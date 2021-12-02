@@ -2075,7 +2075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49d6d7b2a5492be4a913ba62d49cc7db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: JuegoTesting
+  SceneName: Dia1_def
 --- !u!4 &1308990145
 Transform:
   m_ObjectHideFlags: 0

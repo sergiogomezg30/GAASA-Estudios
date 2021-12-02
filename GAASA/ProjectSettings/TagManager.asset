@@ -42,6 +42,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: nubes
+    uniqueID: 2662094005
+    locked: 0
+  - name: casas de fondo
+    uniqueID: 1909210863
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
