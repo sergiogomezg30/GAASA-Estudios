@@ -110,6 +110,7 @@ public class DialogueSystem : MonoBehaviour
         if (!hardcode) {
             interactionsHandler.InteractionFinished();
         }
+        StopAllCoroutines();    //en el caso de que hayamos saltado el texto y volvamos a empezarlo
     }
 
     IEnumerator TypeSentence()
