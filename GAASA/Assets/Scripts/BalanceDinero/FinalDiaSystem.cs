@@ -147,6 +147,7 @@ public class FinalDiaSystem : MonoBehaviour
             dineroRestante += dias[posDiaActual].gastosExtras[0].coste; //lo sumamos ya que es eso que se ahorra
 
         dineroRestanteCant.text = dineroRestante.ToString();
+        FinalDiaData.ahorrosMoney = dineroRestante;
     }
 
     public void LoadNextDay()
