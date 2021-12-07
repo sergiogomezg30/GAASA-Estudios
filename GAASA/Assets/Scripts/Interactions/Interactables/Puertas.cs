@@ -7,6 +7,7 @@ public class Puertas : Interactable
     [SerializeField] private GameObject playerGO;
     [SerializeField] private Transform destino;
     public Animator fundidoNegro;
+ 
     
 
     public override string GetDescription()
