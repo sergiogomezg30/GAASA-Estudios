@@ -16,6 +16,8 @@ public class coche : MonoBehaviour
     [SerializeField]
     private float manadaJabalies = 90;
 
+    [SerializeField] private FinalDiaSystem finalDia;
+
 
     void Update()
     {
@@ -24,10 +26,10 @@ public class coche : MonoBehaviour
 
         if (carHP <=0)
         {
-            
-            loseShake.SetTrigger("loseShake");
-            Instantiate(explosion, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            StartCoroutine(EndMinigame());
+            //loseShake.SetTrigger("loseShake");
+            //Instantiate(explosion, transform.position, Quaternion.identity);
+            //Destroy(gameObject);
 
         }
 
@@ -58,6 +60,21 @@ public class coche : MonoBehaviour
         }
 
 
+    }
+
+    IEnumerator EndMinigame()
+    {
+        Debug.Log("kkhuete");
+        
+
+        yield return new WaitForSeconds(0.5f);
+        Debug.Log("despues del wait");
+
+        finalDia.ShowFinalDayUI();
+
+        loseShake.SetTrigger("loseShake");
+        Instantiate(explosion, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 
     public void Shake()

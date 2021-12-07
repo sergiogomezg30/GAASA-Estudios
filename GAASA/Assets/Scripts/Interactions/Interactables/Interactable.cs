@@ -5,7 +5,9 @@ using UnityEngine;
 /// <summary>
 /// ESTE CODIGO NO DEBE ESTAR ATADA A NINGUN OBJETO
 /// sirve como base para el resto de codigos que hereden de aquí
-/// como NPC o HaciaMinijuego
+/// como NPC o HaciaMinijuego...
+/// 
+/// TODAS LAS CLASES HEREDADAS DEBEN TENER EN EL START LA FUNCION STARTINTERACTABLE()
 /// </summary>
 public abstract class Interactable : MonoBehaviour
 {
