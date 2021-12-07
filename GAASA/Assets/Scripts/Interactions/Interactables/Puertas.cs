@@ -6,6 +6,8 @@ public class Puertas : Interactable
 {
     [SerializeField] private GameObject playerGO;
     [SerializeField] private Transform destino;
+    public Animator fundidoNegro;
+    
 
     public override string GetDescription()
     {
@@ -31,6 +33,7 @@ public class Puertas : Interactable
         player.SetTarget(destino.position);
         playerGO.transform.position = destino.position;
 
+        fundidoNegro.SetTrigger("transicion");
         yield return new WaitForSeconds(0.5f);  //el tiempo se puede cambiar, es para que de tiempo a ejecutarse el codigo
         interactionsHandler.InteractionFinished();  //lo pongo aquí ya que no hay ningun evento que lo haga acabar
 
