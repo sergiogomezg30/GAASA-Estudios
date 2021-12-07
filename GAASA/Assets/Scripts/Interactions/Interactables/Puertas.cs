@@ -30,11 +30,14 @@ public class Puertas : Interactable
     /// </summary>
     IEnumerator Teletransport()
     {
-        player.SetTarget(destino.position);
-        playerGO.transform.position = destino.position;
+        
 
         fundidoNegro.SetTrigger("transicion");
         yield return new WaitForSeconds(0.5f);  //el tiempo se puede cambiar, es para que de tiempo a ejecutarse el codigo
+
+        player.SetTarget(destino.position);
+        playerGO.transform.position = destino.position;
+
         interactionsHandler.InteractionFinished();  //lo pongo aquí ya que no hay ningun evento que lo haga acabar
 
         yield return null;
