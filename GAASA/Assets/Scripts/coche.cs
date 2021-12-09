@@ -11,6 +11,7 @@ public class coche : MonoBehaviour
     public Animator loseShake;
     public ParticleSystem explosion;
     public AudioClip choque;
+    public GameObject sonidoFinal;
 
     private float timeElapsed = 0;
     public GameObject[] objetos;
@@ -22,6 +23,7 @@ public class coche : MonoBehaviour
 
     void Start(){
         audioSource = GetComponent<AudioSource>();
+        sonidoFinal.SetActive(false);
     }
 
     void Update()
@@ -80,6 +82,7 @@ public class coche : MonoBehaviour
         loseShake.SetTrigger("loseShake");
         Instantiate(explosion, transform.position, Quaternion.identity);
         Destroy(gameObject);
+        sonidoFinal.SetActive(true);
         
     }
 

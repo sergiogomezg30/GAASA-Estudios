@@ -6,6 +6,13 @@ public class obstacleBehaviour : MonoBehaviour
 {
     public int dmg = 1;
     public float spd;
+    public AudioClip golpe;
+
+    private AudioSource audioSource; //Poner audioSource y el sonido del golpe a los objetos
+
+    void Start(){
+        audioSource = GetComponent<AudioSource>();
+    }
    
     // Update is called once per frame
     void Update()
@@ -21,7 +28,8 @@ public class obstacleBehaviour : MonoBehaviour
             //Buscar el componente coche que almacena la vida del coche y restarle el dmg
             other.GetComponent<coche>().carHP -= dmg;
             other.GetComponent<coche>().Shake();
-            Debug.Log("El coche ha sufrido daño");
+            audioSource.PlayOneShot(golpe);
+            Debug.Log("El coche ha sufrido daï¿½o");
             Destroy(gameObject);
         }
 
