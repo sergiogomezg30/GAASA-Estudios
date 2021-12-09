@@ -6,7 +6,6 @@ public class obstacleBehaviour : MonoBehaviour
 {
     public int dmg = 1;
     public float spd;
-    public AudioClip golpe;
 //Poner audioSource y el sonido del golpe a los objetos
    
     // Update is called once per frame
