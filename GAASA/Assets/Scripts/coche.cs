@@ -10,7 +10,7 @@ public class coche : MonoBehaviour
     public Animator shakeOnHit;
     public Animator loseShake;
     public ParticleSystem explosion;
-    public AudioClip choque;
+    public AudioClip golpe;
     public GameObject sonidoFinal;
 
     private float timeElapsed = 0;
@@ -89,5 +89,10 @@ public class coche : MonoBehaviour
     public void Shake()
     {
         shakeOnHit.SetTrigger("shake");
+    }
+
+    public void PlaySoundGolpe()
+    {
+        audioSource.PlayOneShot(golpe);
     }
 }
