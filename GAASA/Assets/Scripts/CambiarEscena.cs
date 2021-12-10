@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class CambiarEscena : MonoBehaviour
 {
     public string SceneName;
+    public float tiempo = 2.1f;
 
     private void Start()
     {
@@ -18,13 +19,19 @@ public class CambiarEscena : MonoBehaviour
 
     public void LoadScene()
     {
-        SceneManager.LoadScene(SceneName);
+        StartCoroutine(EmpezarDia(tiempo));
     }
 
     public void CerrarJuego()
     {
         Application.Quit();
         Debug.Log("Salir");
+    }
+
+    IEnumerator EmpezarDia(float segundos)
+    {
+        yield return new WaitForSeconds(tiempo);
+        SceneManager.LoadScene(SceneName);
     }
 
 }
