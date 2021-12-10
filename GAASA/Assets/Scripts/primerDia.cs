@@ -9,12 +9,7 @@ public class primerDia : MonoBehaviour
     public GameObject padreConLlaves;
     public GameObject puertaDesbloqueada;
     public GameObject llavesCoche;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject objetosInteractuables;
 
     // Update is called once per frame
     void Update()
@@ -24,10 +19,15 @@ public class primerDia : MonoBehaviour
             //Desactivamos el padre con el dialogo previo a tener llaves
             padreSinLlaves.SetActive(false);
 
+            //Desactivamos los objetos con los que aun no hemos interactuado
+            objetosInteractuables.SetActive(false);
+
             //activamos el icono de las llaves en la UI
             llavesCoche.SetActive(true);
+
             //activamos el nuevo dialogo del padre
             padreConLlaves.SetActive(true);
+
             //abrimos la puerta
             puertaDesbloqueada.SetActive(true);
 

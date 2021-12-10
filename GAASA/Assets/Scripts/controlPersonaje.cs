@@ -7,6 +7,7 @@ public class controlPersonaje : MonoBehaviour
 
     public float speed;
     public bool canMove;
+    public GameObject animPersonaje;
 
     Vector3 target;
 
@@ -31,6 +32,7 @@ public class controlPersonaje : MonoBehaviour
 
                 //target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 //target.z = 0f;
+
             if (interactionsHandler != null) {
                 if (interactionsHandler.GetActualInteraction() != null && !interactionsHandler.GetActualInteraction().GetTriggerCollider().bounds.Contains(target)) {
                     interactionsHandler.NullifyActualInteraction();
@@ -45,6 +47,17 @@ public class controlPersonaje : MonoBehaviour
 
     void FixedUpdate()
     {
+        //FlipSprite, esta guapisimo para hacer el michael jackson
+        /*if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x < animPersonaje.transform.position.x)
+        {
+            animPersonaje.transform.localScale = new Vector3(-1, 1, 1);
+        }
+
+        else
+        {
+            animPersonaje.transform.localScale = new Vector3(1, 1, 1);
+        }*/
+
         transform.position = Vector3.MoveTowards(transform.position, target, speed*Time.deltaTime);
     }
 

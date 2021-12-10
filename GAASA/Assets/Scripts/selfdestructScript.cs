@@ -12,6 +12,7 @@ public class selfdestructScript : MonoBehaviour
     {
         StartCoroutine(RemoveAfterSeconds(tiempo, gameObject));
     }
+
     IEnumerator RemoveAfterSeconds(int seconds, GameObject obj)
     {
         yield return new WaitForSeconds(tiempo);

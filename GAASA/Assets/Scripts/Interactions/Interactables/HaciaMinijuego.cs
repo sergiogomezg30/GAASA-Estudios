@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class HaciaMinijuego : Interactable
 {
+
     [SerializeField] private string sceneName;
 
     private void Start()
@@ -19,6 +20,7 @@ public class HaciaMinijuego : Interactable
 
     public override void Interact()
     {
+
         Debug.Log("Hacia la escena " + sceneName);
         SceneManager.LoadScene(sceneName);
     }
