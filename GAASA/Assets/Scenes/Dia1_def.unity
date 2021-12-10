@@ -14785,7 +14785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3663891504013706244, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
       propertyPath: nameNPC
-      value: Eustaquio el carajillero
+      value: Eustaquio
       objectReference: {fileID: 0}
     - target: {fileID: 3663891504013706244, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
       propertyPath: interactionsHandler
@@ -14797,7 +14797,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3663891504013706244, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
       propertyPath: dialogueNPC.Array.data[0]
-      value: ODIO A TODO EL MUNDO
+      value: "\xA1ODIO A TODO EL MUNDO!"
       objectReference: {fileID: 0}
     - target: {fileID: 3663891504013706244, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
       propertyPath: dialogueNPC.Array.data[1]
@@ -14805,11 +14805,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3663891504013706244, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
       propertyPath: dialogueNPC.Array.data[2]
-      value: "Disculpa, se\xF1orita. Es que aun no me he tomado mi carajillo"
+      value: "Disculpa, se\xF1orita. Es que aun no me he tomado mi caf\xE9"
       objectReference: {fileID: 0}
     - target: {fileID: 3663891504013706244, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
       propertyPath: dialogueNPC.Array.data[3]
-      value: Y CUANDO NO TOMO MI CARAJILLO, ME PONGO DE MAL HUMOR.
+      value: "Y CUANDO NO TOMO MI CAF\xC9 ME PONGO DE MAL HUMOR."
       objectReference: {fileID: 0}
     - target: {fileID: 3663891504013706244, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
       propertyPath: dialogueNPC.Array.data[4]
@@ -16148,26 +16148,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 609641997}
     m_Modifications:
-    - target: {fileID: 678461323681366638, guid: 4e97a4c51a802ac4dbceb4594b1141a6, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 637.1933
-      objectReference: {fileID: 0}
-    - target: {fileID: 678461323681366638, guid: 4e97a4c51a802ac4dbceb4594b1141a6, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 77.457
-      objectReference: {fileID: 0}
-    - target: {fileID: 678461323681366638, guid: 4e97a4c51a802ac4dbceb4594b1141a6, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.4956
-      objectReference: {fileID: 0}
-    - target: {fileID: 678461323681366638, guid: 4e97a4c51a802ac4dbceb4594b1141a6, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 5.4508
-      objectReference: {fileID: 0}
-    - target: {fileID: 1896607320035523589, guid: 4e97a4c51a802ac4dbceb4594b1141a6, type: 3}
-      propertyPath: m_Color.a
-      value: 0.7294118
-      objectReference: {fileID: 0}
     - target: {fileID: 3287820610769287972, guid: 4e97a4c51a802ac4dbceb4594b1141a6, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -16252,21 +16232,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4195456248855600935, guid: 4e97a4c51a802ac4dbceb4594b1141a6, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4195456248855600935, guid: 4e97a4c51a802ac4dbceb4594b1141a6, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 8948099291291190864, guid: 4e97a4c51a802ac4dbceb4594b1141a6, type: 3}
       propertyPath: m_Name
       value: UI_Dialogue
-      objectReference: {fileID: 0}
-    - target: {fileID: 8948099291291190864, guid: 4e97a4c51a802ac4dbceb4594b1141a6, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e97a4c51a802ac4dbceb4594b1141a6, type: 3}
