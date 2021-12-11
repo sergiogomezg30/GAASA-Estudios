@@ -334,7 +334,7 @@ MonoBehaviour:
   - {fileID: 7185949667531577754, guid: bda12ce3e8db6dc4684b00298b43a180, type: 3}
   - {fileID: 5766151736070227866, guid: 259d6f491eb60ba449f9e2c6c8a586e8, type: 3}
   - {fileID: 8151836320739628006, guid: 90635cf2be24cc74893f64927ccb68dc, type: 3}
-  timer: 2
+  timer: 3
   spawnerMin: -5
   spawnerMax: 5
 --- !u!4 &183890452
