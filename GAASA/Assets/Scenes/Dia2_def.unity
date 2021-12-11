@@ -6346,7 +6346,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1320337810}
   - component: {fileID: 1320337811}
-  - component: {fileID: 1320337812}
   m_Layer: 0
   m_Name: DIALOGOS
   m_TagString: Untagged
@@ -6388,20 +6387,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1320337812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1320337809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8718af528fa75034f92942d8eeef3f0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameObject: {fileID: 1678535277}
-  tiempo: 3
 --- !u!1 &1332615049
 GameObject:
   m_ObjectHideFlags: 0
@@ -11769,6 +11754,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1678535278}
   - component: {fileID: 1678535279}
+  - component: {fileID: 1678535280}
   m_Layer: 0
   m_Name: dialogosDia2
   m_TagString: Untagged
@@ -11841,6 +11827,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1678535280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678535277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8718af528fa75034f92942d8eeef3f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 1678535277}
+  tiempo: 8
 --- !u!1 &1693762421
 GameObject:
   m_ObjectHideFlags: 0

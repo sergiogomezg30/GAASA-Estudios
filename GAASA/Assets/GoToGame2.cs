@@ -39,7 +39,7 @@ public class GoToGame2 : MonoBehaviour
     IEnumerator CambioEscena()
     {
 
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(3);
         fundidoNegro.SetTrigger("transicion");
 
         yield return new WaitForSeconds(1);
