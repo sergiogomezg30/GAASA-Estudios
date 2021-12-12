@@ -10,21 +10,14 @@ public class coche : MonoBehaviour
     public Animator shakeOnHit;
     public Animator loseShake;
     public ParticleSystem explosion;
-    public AudioClip golpe;
-    public GameObject sonidoFinal;
 
     private float timeElapsed = 0;
     public GameObject[] objetos;
     [SerializeField]
     private float manadaJabalies = 90;
-    private AudioSource audioSource;
 
     [SerializeField] private FinalDiaSystem finalDia;
 
-    void Start(){
-        audioSource = GetComponent<AudioSource>();
-        sonidoFinal.SetActive(false);
-    }
 
     void Update()
     {
@@ -33,7 +26,6 @@ public class coche : MonoBehaviour
 
         if (carHP <=0)
         {
-            //audioSource.PlayOneShot(choque); BUSCAR COMO HACER QUE SUENE
             StartCoroutine(EndMinigame());
             //loseShake.SetTrigger("loseShake");
             //Instantiate(explosion, transform.position, Quaternion.identity);
@@ -73,26 +65,20 @@ public class coche : MonoBehaviour
     IEnumerator EndMinigame()
     {
         Debug.Log("kkhuete");
+        
 
         yield return new WaitForSeconds(0.5f);
         Debug.Log("despues del wait");
 
-        //finalDia.ShowFinalDayUI();
+        finalDia.ShowFinalDayUI();
 
         loseShake.SetTrigger("loseShake");
         Instantiate(explosion, transform.position, Quaternion.identity);
         Destroy(gameObject);
-        sonidoFinal.SetActive(true);
-        
     }
 
     public void Shake()
     {
         shakeOnHit.SetTrigger("shake");
-    }
-
-    public void PlaySoundGolpe()
-    {
-        audioSource.PlayOneShot(golpe);
     }
 }
