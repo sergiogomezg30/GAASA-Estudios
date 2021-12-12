@@ -24,7 +24,6 @@ public class GoToGame3 : MonoBehaviour
     {
 
         //Si clickeas, se inicia una animacion.
-        this.transform.localScale -= new Vector3(aumento, aumento, 0);
         StartCoroutine(CambioEscena());
 
     }
@@ -32,7 +31,6 @@ public class GoToGame3 : MonoBehaviour
     IEnumerator CambioEscena()
     {
 
-        yield return new WaitForSeconds(1);
         fundidoNegro.SetTrigger("transicion");
 
         yield return new WaitForSeconds(1);
