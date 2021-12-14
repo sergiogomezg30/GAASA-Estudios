@@ -64,7 +64,10 @@ public class DialogueSystem : MonoBehaviour
         this.hardcode = hardcode;
 
         Debug.Log(dialogueLines.Count + "lines");
-        CreateDialogue();
+        if (!hardcode)
+            CreateDialogue();
+        else
+            CreateDialogue2();
     }
     
     private void CreateDialogue()
@@ -85,6 +88,29 @@ public class DialogueSystem : MonoBehaviour
             image1.gameObject.GetComponent<RectTransform>().localScale = new Vector3(-1, 1, 1);
         if (npcSprite.gameObject.GetComponent<NPC>().originImageMirandoDer)        //si esta mirando a la der que mire a la izq
             image2.gameObject.GetComponent<RectTransform>().localScale = new Vector3(-1, 1, 1);
+
+        uiDialogue.SetActive(true);
+
+        StartCoroutine(TypeSentence());
+    }
+    private void CreateDialogue2()
+    {
+        dialogueText.text = "";
+        nameText.text = npcName;
+
+        image1.sprite = playerSprite.sprite;
+        image2.sprite = npcSprite.sprite;
+
+        float relation1 = image1.sprite.rect.height / image1.sprite.rect.width;
+        float relation2 = image2.sprite.rect.height / image2.sprite.rect.width;
+
+        image1.gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(100, relation1 * 100);
+        image2.gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(100, relation2 * 100);
+
+        /*if (!playerSprite.gameObject.GetComponent<controlPersonaje>().originImageMirandoDer)    //si esta mirando a la izq que mire a la der
+            image1.gameObject.GetComponent<RectTransform>().localScale = new Vector3(-1, 1, 1);
+        if (npcSprite.gameObject.GetComponent<NPC>().originImageMirandoDer)        //si esta mirando a la der que mire a la izq
+            image2.gameObject.GetComponent<RectTransform>().localScale = new Vector3(-1, 1, 1);*/
 
         uiDialogue.SetActive(true);
 
