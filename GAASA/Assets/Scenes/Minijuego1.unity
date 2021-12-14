@@ -204,8 +204,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   canMove: 0
-  animPersonaje: {fileID: 0}
+  familiarQueSoy: 0
+  personajesAnimator: []
   interactionsHandler: {fileID: 0}
+  _originImageMirandoDer: 0
 --- !u!4 &107712972
 Transform:
   m_ObjectHideFlags: 0
@@ -245,7 +247,7 @@ MonoBehaviour:
   - {fileID: 1703269195}
   - {fileID: 1809453503}
   - {fileID: 185472504}
-  manadaJabalies: 100
+  manadaJabalies: 90
   finalDia: {fileID: 1592850096}
 --- !u!1 &183890449
 GameObject:
@@ -334,7 +336,9 @@ MonoBehaviour:
   - {fileID: 7185949667531577754, guid: bda12ce3e8db6dc4684b00298b43a180, type: 3}
   - {fileID: 5766151736070227866, guid: 259d6f491eb60ba449f9e2c6c8a586e8, type: 3}
   - {fileID: 8151836320739628006, guid: 90635cf2be24cc74893f64927ccb68dc, type: 3}
-  timer: 3
+  timer: 5
+  timeReduc: 0.25
+  minimo: 2
   spawnerMin: -5
   spawnerMax: 5
 --- !u!4 &183890452
@@ -5558,6 +5562,8 @@ MonoBehaviour:
   obstacles:
   - {fileID: 7132404452720247747, guid: d58d6da7676fac7479998c064826cfff, type: 3}
   timer: 0.5
+  timeReduc: 0.25
+  minimo: 1.5
   spawnerMin: -5
   spawnerMax: 5
 --- !u!4 &521412688
@@ -25168,7 +25174,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1219937178}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 120
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
