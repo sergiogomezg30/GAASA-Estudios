@@ -1170,7 +1170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53183e2531ffe5a45963f3f975c568c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objetoActivable: {fileID: 1674923457}
+  objetoActivable: {fileID: 1348705051}
   aumento: 0.15
   encender: 0
   finalDia: {fileID: 772851051}
