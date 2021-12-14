@@ -82,7 +82,7 @@ public class DialogueSystem : MonoBehaviour
         image2.gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(100, relation2 * 100);
 
         if (playerSprite.flipX)
-            image1.gameObject.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
+            image1.gameObject.GetComponent<RectTransform>().localScale = new Vector3(-1, 1, 1);
         if (npcSprite.flipX)
             image2.gameObject.GetComponent<RectTransform>().localScale = new Vector3(-1, 1, 1);
 
