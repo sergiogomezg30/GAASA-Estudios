@@ -1,0 +1,696 @@
+fileFormatVersion: 2
+guid: b3ee73b6247d3c342848900697412003
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7041900343698464116
+    second: "Ni\xF1oMov_0"
+  - first:
+      213: 536983625956824713
+    second: "Ni\xF1oMov_1"
+  - first:
+      213: -8512654313064370568
+    second: "Ni\xF1oMov_2"
+  - first:
+      213: 2706911624040349697
+    second: "Ni\xF1oMov_3"
+  - first:
+      213: 5831003612498747999
+    second: "Ni\xF1oMov_4"
+  - first:
+      213: -2838266698795854570
+    second: "Ni\xF1oMov_5"
+  - first:
+      213: 1429380106742346942
+    second: "Ni\xF1oMov_6"
+  - first:
+      213: -9096657706528875495
+    second: "Ni\xF1oMov_7"
+  - first:
+      213: -9086084292703380230
+    second: "Ni\xF1oMov_8"
+  - first:
+      213: -8669828841951602197
+    second: "Ni\xF1oMov_9"
+  - first:
+      213: 4352600509531527968
+    second: "Ni\xF1oMov_10"
+  - first:
+      213: -4936496287061106816
+    second: "Ni\xF1oMov_11"
+  - first:
+      213: -6324696580357136799
+    second: "Ni\xF1oMov_12"
+  - first:
+      213: -7381431219842413575
+    second: "Ni\xF1oMov_13"
+  - first:
+      213: 2352904782559268003
+    second: "Ni\xF1oMov_14"
+  - first:
+      213: -991470354552125639
+    second: "Ni\xF1oMov_15"
+  - first:
+      213: -1553128109713146583
+    second: "Ni\xF1oMov_16"
+  - first:
+      213: 3786901063420809519
+    second: "Ni\xF1oMov_17"
+  - first:
+      213: 2617694423094150524
+    second: "Ni\xF1oMov_18"
+  - first:
+      213: -5944062968810750371
+    second: "Ni\xF1oMov_19"
+  - first:
+      213: -2228806321122398565
+    second: "Ni\xF1oMov_20"
+  - first:
+      213: 7530975184703037803
+    second: "Ni\xF1oMov_21"
+  - first:
+      213: -4166479214613291715
+    second: "Ni\xF1oMov_22"
+  - first:
+      213: 2962175619228100372
+    second: "Ni\xF1oMov_23"
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Ni\xF1oMov_0"
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1532
+        width: 161
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d19d19d0bd9b160800000000000000
+      internalID: 7041900343698464116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ni\xF1oMov_1"
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1531
+        width: 165
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9869b5343cfb37700800000000000000
+      internalID: 536983625956824713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ni\xF1oMov_2"
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 1531
+        width: 170
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ee916110afcd980800000000000000
+      internalID: -8512654313064370568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ni\xF1oMov_3"
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 1532
+        width: 177
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1000d4db7c1e09520800000000000000
+      internalID: 2706911624040349697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ni\xF1oMov_4"
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 1534
+        width: 182
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52e10f34e2ebe050800000000000000
+      internalID: 5831003612498747999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ni\xF1oMov_5"
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1534
+        width: 187
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 615d378a9737c98d0800000000000000
+      internalID: -2838266698795854570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ni\xF1oMov_6"
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 1532
+        width: 189
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4336742ad26d310800000000000000
+      internalID: 1429380106742346942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ni\xF1oMov_7"
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1034
+        width: 187
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91cd607130e22c180800000000000000
+      internalID: -9096657706528875495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ni\xF1oMov_8"
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 1034
+        width: 182
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc9826d97eb7e180800000000000000
+      internalID: -9086084292703380230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ni\xF1oMov_9"
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 1032
+        width: 177
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9d90c5a949ea780800000000000000
+      internalID: -8669828841951602197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ni\xF1oMov_10"
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 1031
+        width: 170
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b9fc33a1b876c30800000000000000
+      internalID: 4352600509531527968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ni\xF1oMov_11"
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 1031
+        width: 165
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f10b618ca0e7bb0800000000000000
+      internalID: -4936496287061106816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ni\xF1oMov_12"
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 532
+        width: 161
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e5fa748f92a38a0800000000000000
+      internalID: -6324696580357136799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ni\xF1oMov_13"
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 532
+        width: 157
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb805ff963ef8990800000000000000
+      internalID: -7381431219842413575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ni\xF1oMov_14"
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 532
+        width: 152
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac43cafe6237a020800000000000000
+      internalID: 2352904782559268003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ni\xF1oMov_15"
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 533
+        width: 147
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937079f27f69d32f0800000000000000
+      internalID: -991470354552125639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ni\xF1oMov_16"
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 533
+        width: 146
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92dbfd9863e227ae0800000000000000
+      internalID: -1553128109713146583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ni\xF1oMov_17"
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 533
+        width: 151
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f211fbc0476cd8430800000000000000
+      internalID: 3786901063420809519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ni\xF1oMov_18"
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 531
+        width: 159
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c754c0b653be35420800000000000000
+      internalID: 2617694423094150524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ni\xF1oMov_19"
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 33
+        width: 151
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e3b7d0932728da0800000000000000
+      internalID: -5944062968810750371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ni\xF1oMov_20"
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 33
+        width: 146
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9eaa5ca570b111e0800000000000000
+      internalID: -2228806321122398565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ni\xF1oMov_21"
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 33
+        width: 147
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61a1889706638860800000000000000
+      internalID: 7530975184703037803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ni\xF1oMov_22"
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 32
+        width: 152
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d1de0ba31bd26c0800000000000000
+      internalID: -4166479214613291715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Ni\xF1oMov_23"
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 32
+        width: 157
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 417e96a0803cb1920800000000000000
+      internalID: 2962175619228100372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

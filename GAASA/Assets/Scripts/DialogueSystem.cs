@@ -81,9 +81,9 @@ public class DialogueSystem : MonoBehaviour
         image1.gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(100, relation1 * 100);
         image2.gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(100, relation2 * 100);
 
-        if (playerSprite.flipX)
-            image1.gameObject.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
-        if (npcSprite.flipX)
+        if (!playerSprite.gameObject.GetComponent<controlPersonaje>().originImageMirandoDer)    //si esta mirando a la izq que mire a la der
+            image1.gameObject.GetComponent<RectTransform>().localScale = new Vector3(-1, 1, 1);
+        if (npcSprite.gameObject.GetComponent<NPC>().originImageMirandoDer)        //si esta mirando a la der que mire a la izq
             image2.gameObject.GetComponent<RectTransform>().localScale = new Vector3(-1, 1, 1);
 
         uiDialogue.SetActive(true);
@@ -111,6 +111,10 @@ public class DialogueSystem : MonoBehaviour
             interactionsHandler.InteractionFinished();
         }
         StopAllCoroutines();    //en el caso de que hayamos saltado el texto y volvamos a empezarlo
+
+        //resetear el escalado porsi
+        image1.gameObject.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
+        image2.gameObject.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
     }
 
     IEnumerator TypeSentence()

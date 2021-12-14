@@ -1,0 +1,696 @@
+fileFormatVersion: 2
+guid: 248dbf7a63c6e084bbf03bf5b6167d8c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9063340811565176155
+    second: AbueloMov_0
+  - first:
+      213: 7347283858103566952
+    second: AbueloMov_1
+  - first:
+      213: 1477799014961517519
+    second: AbueloMov_2
+  - first:
+      213: -3886803982069781535
+    second: AbueloMov_3
+  - first:
+      213: 8522372706581592591
+    second: AbueloMov_4
+  - first:
+      213: 6940723973858596247
+    second: AbueloMov_5
+  - first:
+      213: -3486842733482971522
+    second: AbueloMov_6
+  - first:
+      213: 6068753186528921031
+    second: AbueloMov_7
+  - first:
+      213: -2497486772122816162
+    second: AbueloMov_8
+  - first:
+      213: 450176500209219353
+    second: AbueloMov_9
+  - first:
+      213: 5880319216926494332
+    second: AbueloMov_10
+  - first:
+      213: -5569503404763878983
+    second: AbueloMov_11
+  - first:
+      213: 5426961948363293400
+    second: AbueloMov_12
+  - first:
+      213: 3593526725142261898
+    second: AbueloMov_13
+  - first:
+      213: 734104563064484364
+    second: AbueloMov_14
+  - first:
+      213: -5101448757079615224
+    second: AbueloMov_15
+  - first:
+      213: 2556294607695910058
+    second: AbueloMov_16
+  - first:
+      213: 761946209392107472
+    second: AbueloMov_17
+  - first:
+      213: 2223404073115355006
+    second: AbueloMov_18
+  - first:
+      213: 5074461471300931462
+    second: AbueloMov_19
+  - first:
+      213: 9096683119403593473
+    second: AbueloMov_20
+  - first:
+      213: 429635627047629516
+    second: AbueloMov_21
+  - first:
+      213: 1572790650851239778
+    second: AbueloMov_22
+  - first:
+      213: -4301485012605455679
+    second: AbueloMov_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AbueloMov_0
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 3988
+        width: 711
+        height: 1149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5594afc27477cd70800000000000000
+      internalID: 9063340811565176155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbueloMov_1
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 3988
+        width: 713
+        height: 1141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 862893acdbbc6f560800000000000000
+      internalID: 7347283858103566952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbueloMov_2
+      rect:
+        serializedVersion: 2
+        x: 2111
+        y: 3988
+        width: 724
+        height: 1127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc31438df52328410800000000000000
+      internalID: 1477799014961517519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbueloMov_3
+      rect:
+        serializedVersion: 2
+        x: 3112
+        y: 3988
+        width: 735
+        height: 1141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb28291f5c4f0ac0800000000000000
+      internalID: -3886803982069781535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbueloMov_4
+      rect:
+        serializedVersion: 2
+        x: 4111
+        y: 3987
+        width: 748
+        height: 1150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ab74bb2dc854670800000000000000
+      internalID: 8522372706581592591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbueloMov_5
+      rect:
+        serializedVersion: 2
+        x: 5112
+        y: 3987
+        width: 758
+        height: 1143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79511e14ea7625060800000000000000
+      internalID: 6940723973858596247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbueloMov_6
+      rect:
+        serializedVersion: 2
+        x: 6113
+        y: 3987
+        width: 759
+        height: 1129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e681b020f3c9fc0800000000000000
+      internalID: -3486842733482971522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbueloMov_7
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 2686
+        width: 759
+        height: 1141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c583989eda883450800000000000000
+      internalID: 6068753186528921031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbueloMov_8
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 2686
+        width: 748
+        height: 1152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e51f1645305275dd0800000000000000
+      internalID: -2497486772122816162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbueloMov_9
+      rect:
+        serializedVersion: 2
+        x: 2111
+        y: 2689
+        width: 738
+        height: 1138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917f23d44295f3600800000000000000
+      internalID: 450176500209219353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbueloMov_10
+      rect:
+        serializedVersion: 2
+        x: 3112
+        y: 2687
+        width: 725
+        height: 1127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e8eca2c271b9150800000000000000
+      internalID: 5880319216926494332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbueloMov_11
+      rect:
+        serializedVersion: 2
+        x: 4111
+        y: 2686
+        width: 713
+        height: 1141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b968bf692625b2b0800000000000000
+      internalID: -5569503404763878983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbueloMov_12
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1386
+        width: 711
+        height: 1149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d281c58321705b40800000000000000
+      internalID: 5426961948363293400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbueloMov_13
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 1386
+        width: 707
+        height: 1139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a803af66485ced130800000000000000
+      internalID: 3593526725142261898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbueloMov_14
+      rect:
+        serializedVersion: 2
+        x: 2111
+        y: 1386
+        width: 704
+        height: 1128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c02b37de530103a00800000000000000
+      internalID: 734104563064484364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbueloMov_15
+      rect:
+        serializedVersion: 2
+        x: 3112
+        y: 1387
+        width: 697
+        height: 1141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809596252630439b0800000000000000
+      internalID: -5101448757079615224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbueloMov_16
+      rect:
+        serializedVersion: 2
+        x: 4111
+        y: 1387
+        width: 696
+        height: 1151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa416f0e668c97320800000000000000
+      internalID: 2556294607695910058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbueloMov_17
+      rect:
+        serializedVersion: 2
+        x: 5112
+        y: 1386
+        width: 693
+        height: 1145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df95cc5a0af29a00800000000000000
+      internalID: 761946209392107472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbueloMov_18
+      rect:
+        serializedVersion: 2
+        x: 6113
+        y: 1386
+        width: 694
+        height: 1132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e778232793e1bde10800000000000000
+      internalID: 2223404073115355006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbueloMov_19
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 87
+        width: 694
+        height: 1142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f4c4f82db1c6640800000000000000
+      internalID: 5074461471300931462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbueloMov_20
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 87
+        width: 693
+        height: 1152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10fe75ec919ed3e70800000000000000
+      internalID: 9096683119403593473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbueloMov_21
+      rect:
+        serializedVersion: 2
+        x: 2111
+        y: 87
+        width: 700
+        height: 1139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2b605935f56f500800000000000000
+      internalID: 429635627047629516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbueloMov_22
+      rect:
+        serializedVersion: 2
+        x: 3112
+        y: 87
+        width: 704
+        height: 1128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2672b0293cca3d510800000000000000
+      internalID: 1572790650851239778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AbueloMov_23
+      rect:
+        serializedVersion: 2
+        x: 4111
+        y: 87
+        width: 710
+        height: 1139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c23cf8db2e0e44c0800000000000000
+      internalID: -4301485012605455679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPC : Interactable
+public class NPC : Interactable, IDondeMiro
 {
     [SerializeField] private string nameNPC;
     [SerializeField] private string[] dialogueNPC;
+
+    [SerializeField] private bool _originImageMirandoDer;
+    public bool originImageMirandoDer { get => _originImageMirandoDer; }
 
     private void Start()
     {
