@@ -2460,7 +2460,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045093765}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.16, y: 2.23, z: 8}
+  m_LocalPosition: {x: 0, y: -1.47, z: 8}
   m_LocalScale: {x: 1.6531, y: 1.6531, z: 1.6531}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3266,8 +3266,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1623114534}
   - component: {fileID: 1623114533}
-  - component: {fileID: 1623114535}
   - component: {fileID: 1623114536}
+  - component: {fileID: 1623114535}
   m_Layer: 0
   m_Name: "PorteroNi\xF1o"
   m_TagString: Untagged
@@ -3315,7 +3315,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: b411f4b53104fe84cb5123f25c3835e5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cd023b64753dfa34285d97415ed89ae0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -3335,7 +3335,7 @@ Transform:
   m_GameObject: {fileID: 1623114532}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -1.47, z: 8}
-  m_LocalScale: {x: 0.45, y: 0.45, z: 0.45}
+  m_LocalScale: {x: 1.6531, y: 1.6531, z: 1.6531}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -3351,8 +3351,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.04, y: 16.47, z: 0.2}
-  m_Center: {x: 0, y: 8.235, z: 0}
+  m_Size: {x: 1.61, y: 4.38, z: 0.2}
+  m_Center: {x: 0, y: 2.19, z: 0}
 --- !u!114 &1623114536
 MonoBehaviour:
   m_ObjectHideFlags: 0
