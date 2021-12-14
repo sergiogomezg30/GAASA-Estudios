@@ -5,6 +5,7 @@ using UnityEngine;
 public class SegundoDia : MonoBehaviour
 {
     public bool herramientas = false;
+    public GameObject indicadorSubir;
     public GameObject puertaDesbloqueada;
     public GameObject herramientasUI;
     public GameObject objetosInteractuables;
@@ -23,6 +24,8 @@ public class SegundoDia : MonoBehaviour
             //abrimos la puerta
             puertaDesbloqueada.SetActive(true);
 
+            //Desactivamos la flechita de subir al desvan
+            indicadorSubir.SetActive(false);
         }
     }
 }
