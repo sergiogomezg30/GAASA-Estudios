@@ -11,6 +11,8 @@ public class spawnerBehaviour : MonoBehaviour
     //Cada cuanto tiempo se spawnea un objeto
     [SerializeField]
     private float timer;
+    public float timeReduc = 0.25f;
+    public float minimo = 1.5f;
 
     public float spawnerMin = -5f;
     public float spawnerMax = 5f;
@@ -26,7 +28,14 @@ public class spawnerBehaviour : MonoBehaviour
             Instantiate(obstacles[randomObstacle], 
                 new Vector3(transform.position.x,transform.position.y+randOffset, 0f),
                 Quaternion.identity);
+
+            if (timer > minimo)
+            {
+                timer -= timeReduc;
+            }
+
             timeUntilSpawn = timer;
+
         }
 
         else { timeUntilSpawn -= Time.deltaTime; }
