@@ -50,7 +50,7 @@ public class controlPersonaje : MonoBehaviour, IDondeMiro
                 break;
             case MiembroFamiliar.Nino:
                 animator.runtimeAnimatorController = personajesAnimator[2];
-                transform.localScale = new Vector3(0.8f, 0.8f, 1f);   //es la escala que puso gonzalo en Dia2 que la he copiado
+                transform.localScale = new Vector3(0.6f, 0.6f, 1f);   //es la escala que puso gonzalo en Dia2 que la he copiado
                 break;
             //case MiembroFamiliar.Padre:
                 //animator.runtimeAnimatorController = personajesAnimator[3];
