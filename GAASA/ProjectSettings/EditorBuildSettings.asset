@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Minijuego2.unity
     guid: 9ef0fd64462759545984a46803c1f6b4
   - enabled: 1
+    path: Assets/Scenes/Dia3_def.unity
+    guid: 33b60a1256fdc304e8967c4b7ed8856e
+  - enabled: 1
     path: Assets/Scenes/MinijuegoFutbol.unity
     guid: ef8d6bc0d3c7872469308bc88abc030a
   - enabled: 0

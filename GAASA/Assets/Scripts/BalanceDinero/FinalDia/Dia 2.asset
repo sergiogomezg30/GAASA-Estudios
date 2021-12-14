@@ -27,4 +27,4 @@ MonoBehaviour:
   - nombreGasto: Medicinas fuertes
     coste: 8
     esOpcional: 0
-  nextDiaScene: MinijuegoFutbol
+  nextDiaScene: Dia3_def
