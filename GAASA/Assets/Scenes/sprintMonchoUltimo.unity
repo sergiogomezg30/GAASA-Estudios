@@ -582,7 +582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8417965378136047842, guid: f877884fdc378364695ace7a1f77bd5b, type: 3}
       propertyPath: familiarQueSoy
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8417965378136047842, guid: f877884fdc378364695ace7a1f77bd5b, type: 3}
       propertyPath: _originImageMirandoDer

@@ -213,8 +213,12 @@ MonoBehaviour:
   speed: 10
   canMove: 0
   familiarQueSoy: 0
-  personajesAnimator: []
+  personajesAnimator:
+  - {fileID: 9100000, guid: b1d861ff10709a941bc44161da18aa92, type: 2}
+  - {fileID: 9100000, guid: 0ec0250c6cfefb74da45d8337e9b8cb5, type: 2}
+  - {fileID: 9100000, guid: 78dc8c09befd39c41b36e25801294152, type: 2}
   interactionsHandler: {fileID: 4159018381248362553}
+  _originImageMirandoDer: 0
 --- !u!54 &8417965378136047841
 Rigidbody:
   m_ObjectHideFlags: 0
