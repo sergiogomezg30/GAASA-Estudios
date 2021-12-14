@@ -31,7 +31,9 @@ public class GoToGame2 : MonoBehaviour
         this.transform.localScale -= new Vector3(aumento, aumento, 0);
 
         subirEscaleraAnim.SetActive(true);
-        jugador.SetActive(false);
+        //jugador.SetActive(false);
+        jugador.GetComponent<SpriteRenderer>().enabled = false;
+        jugador.GetComponent<controlPersonaje>().canMove = false;
         StartCoroutine(CambioEscena());
 
     }
