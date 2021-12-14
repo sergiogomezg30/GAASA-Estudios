@@ -31,7 +31,9 @@ public class GoToGame : MonoBehaviour
         this.transform.localScale -= new Vector3(aumento, aumento, 0);
 
         cocheAnim.SetTrigger("empezar");
-        jugador.SetActive(false);
+        //jugador.SetActive(false);
+        jugador.GetComponent<SpriteRenderer>().enabled = false;
+        jugador.GetComponent<controlPersonaje>().canMove = false;
         StartCoroutine(CambioEscena());
 
     }
