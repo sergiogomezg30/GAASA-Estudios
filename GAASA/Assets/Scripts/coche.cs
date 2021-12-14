@@ -64,11 +64,10 @@ public class coche : MonoBehaviour
 
     IEnumerator EndMinigame()
     {
-        Debug.Log("kkhuete");
+        //Debug.Log("kkhuete");
         
-
-        yield return new WaitForSeconds(0.5f);
-        Debug.Log("despues del wait");
+        yield return null;
+        //Debug.Log("despues del wait");
 
         finalDia.ShowFinalDayUI();
 
