@@ -7,9 +7,7 @@ public class UIMinijuegoFutbolSystem : MonoBehaviour
 {
     public static UIMinijuegoFutbolSystem Instance;
 
-    [SerializeField] private Text paradasText;
     [SerializeField] private Transform paradasImages;
-    [SerializeField] private Text golesText;
     [SerializeField] private Transform golesImages;
 
     [SerializeField] private Image celebracionImage;
@@ -43,13 +41,11 @@ public class UIMinijuegoFutbolSystem : MonoBehaviour
 
     public void SetParadasUI(int paradas)
     {
-        paradasText.text = "Paradas: " + paradas;
         paradasImages.GetChild(paradas - 1).gameObject.SetActive(true);
     }
 
     public void SetGolesUI(int goles)
     {
-        golesText.text = "Goles: " + goles;
         golesImages.GetChild(goles - 1).gameObject.SetActive(true);
     }
 
