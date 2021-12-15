@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Animations;
 using UnityEngine;
+//using UnityEditor.Animations;
 
 public class controlPersonaje : MonoBehaviour, IDondeMiro
 {
@@ -19,7 +19,7 @@ public class controlPersonaje : MonoBehaviour, IDondeMiro
     //public GameObject animPersonaje;
 
     Vector3 target;
-    [SerializeField] private AnimatorController[] personajesAnimator;
+    [SerializeField] private RuntimeAnimatorController[] personajesAnimator;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
 
