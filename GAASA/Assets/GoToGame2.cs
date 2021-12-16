@@ -12,10 +12,19 @@ public class GoToGame2 : MonoBehaviour
     public GameObject subirEscaleraAnim;
     public float aumento = 0.15f;
     public string nombreJuego;
+    public AudioClip electricidad;
 
-    //Pequeño pop para resaltar que el objeto es interactuable
+    private AudioSource audioSource;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
+    //Pequeï¿½o pop para resaltar que el objeto es interactuable
     void OnMouseEnter()
     {
+        audioSource.PlayOneShot(electricidad);
         this.transform.localScale += new Vector3(aumento, aumento, 0);
     }
 
