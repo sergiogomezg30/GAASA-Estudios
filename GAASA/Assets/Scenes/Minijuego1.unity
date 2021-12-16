@@ -221,7 +221,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -342,7 +342,7 @@ MonoBehaviour:
   sonidoFinal: {fileID: 658968709}
   motor: {fileID: 1472470398}
   jabalies: {fileID: 115288145}
-  golpe: {fileID: 8300000, guid: bc7f7f9afeae0a14bacc185aa320f99a, type: 3}
+  golpe: {fileID: 8300000, guid: a0491a0822ed7284ea0f3651814f0201, type: 3}
   objetos:
   - {fileID: 521412685}
   - {fileID: 1703269195}
@@ -393,7 +393,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8ceefe421983c3043965bdfa1aff35a8, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5660,7 +5660,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 16f93bd9cb0a9c24d8376d9fb36a1326, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.339
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -20643,7 +20643,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 75f10480a848f494aafacaf4c1effc1e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -36102,7 +36102,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6edab14f80a85814689371296fd9c071, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0

@@ -274,7 +274,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -370,8 +370,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ead2185a6b1963443abb597e2d5b9ef6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseEncima: {fileID: 8300000, guid: bc7f7f9afeae0a14bacc185aa320f99a, type: 3}
-  mouseClic: {fileID: 8300000, guid: a57953b119bade849b5ed61f00ad12aa, type: 3}
+  mouseEncima: {fileID: 8300000, guid: 74673c68dd130a34a8d3e4187c809058, type: 3}
+  mouseClic: {fileID: 8300000, guid: 1cfecb4a99d8efc4285d87521f603bb1, type: 3}
 --- !u!1 &112214698
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,7 +778,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7067308011243967036, guid: f877884fdc378364695ace7a1f77bd5b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.854462
+      value: 17.943306
       objectReference: {fileID: 0}
     - target: {fileID: 7067308011243967036, guid: f877884fdc378364695ace7a1f77bd5b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1012,7 +1012,7 @@ MonoBehaviour:
   cocheAnim: {fileID: 278240415}
   aumento: 0.15
   nombreJuego: Minijuego1
-  motorEncendido: {fileID: 8300000, guid: bc7f7f9afeae0a14bacc185aa320f99a, type: 3}
+  motorEncendido: {fileID: 8300000, guid: fa395fedd93f0e64180a02060c6586ef, type: 3}
   motor: {fileID: 219621530}
 --- !u!61 &278240419
 BoxCollider2D:
@@ -1052,7 +1052,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3571,7 +3571,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3667,8 +3667,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ead2185a6b1963443abb597e2d5b9ef6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseEncima: {fileID: 8300000, guid: bc7f7f9afeae0a14bacc185aa320f99a, type: 3}
-  mouseClic: {fileID: 8300000, guid: a57953b119bade849b5ed61f00ad12aa, type: 3}
+  mouseEncima: {fileID: 8300000, guid: 74673c68dd130a34a8d3e4187c809058, type: 3}
+  mouseClic: {fileID: 8300000, guid: 1cfecb4a99d8efc4285d87521f603bb1, type: 3}
 --- !u!1 &1593172167 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8948099291291190864, guid: 4e97a4c51a802ac4dbceb4594b1141a6, type: 3}
@@ -3814,7 +3814,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3910,8 +3910,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ead2185a6b1963443abb597e2d5b9ef6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseEncima: {fileID: 8300000, guid: bc7f7f9afeae0a14bacc185aa320f99a, type: 3}
-  mouseClic: {fileID: 8300000, guid: a57953b119bade849b5ed61f00ad12aa, type: 3}
+  mouseEncima: {fileID: 8300000, guid: 74673c68dd130a34a8d3e4187c809058, type: 3}
+  mouseClic: {fileID: 8300000, guid: 1cfecb4a99d8efc4285d87521f603bb1, type: 3}
 --- !u!1 &1662938898
 GameObject:
   m_ObjectHideFlags: 0
@@ -4215,7 +4215,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4311,8 +4311,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ead2185a6b1963443abb597e2d5b9ef6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseEncima: {fileID: 8300000, guid: bc7f7f9afeae0a14bacc185aa320f99a, type: 3}
-  mouseClic: {fileID: 8300000, guid: a57953b119bade849b5ed61f00ad12aa, type: 3}
+  mouseEncima: {fileID: 8300000, guid: 74673c68dd130a34a8d3e4187c809058, type: 3}
+  mouseClic: {fileID: 8300000, guid: 1cfecb4a99d8efc4285d87521f603bb1, type: 3}
 --- !u!1 &1766346980
 GameObject:
   m_ObjectHideFlags: 0
@@ -4569,7 +4569,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4665,8 +4665,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ead2185a6b1963443abb597e2d5b9ef6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseEncima: {fileID: 8300000, guid: bc7f7f9afeae0a14bacc185aa320f99a, type: 3}
-  mouseClic: {fileID: 8300000, guid: a57953b119bade849b5ed61f00ad12aa, type: 3}
+  mouseEncima: {fileID: 8300000, guid: 74673c68dd130a34a8d3e4187c809058, type: 3}
+  mouseClic: {fileID: 8300000, guid: 1cfecb4a99d8efc4285d87521f603bb1, type: 3}
 --- !u!1 &1848739401
 GameObject:
   m_ObjectHideFlags: 0
@@ -5076,7 +5076,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5172,8 +5172,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ead2185a6b1963443abb597e2d5b9ef6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseEncima: {fileID: 8300000, guid: bc7f7f9afeae0a14bacc185aa320f99a, type: 3}
-  mouseClic: {fileID: 8300000, guid: a57953b119bade849b5ed61f00ad12aa, type: 3}
+  mouseEncima: {fileID: 8300000, guid: 74673c68dd130a34a8d3e4187c809058, type: 3}
+  mouseClic: {fileID: 8300000, guid: 1cfecb4a99d8efc4285d87521f603bb1, type: 3}
 --- !u!1 &2037351978
 GameObject:
   m_ObjectHideFlags: 0

@@ -21,5 +21,6 @@ public class sonidoInteractuable : MonoBehaviour
     void OnMouseDown()
     {
         audioSource.PlayOneShot(mouseClic);
+        Destroy(this);
     }
 }
