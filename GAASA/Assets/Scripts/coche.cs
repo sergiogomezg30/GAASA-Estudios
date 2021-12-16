@@ -10,6 +10,7 @@ public class coche : MonoBehaviour
     public Animator shakeOnHit;
     public Animator loseShake;
     public ParticleSystem explosion;
+    public GameObject sonidoFinal;
 
     private float timeElapsed = 0;
     public GameObject[] objetos;
@@ -18,6 +19,10 @@ public class coche : MonoBehaviour
 
     [SerializeField] private FinalDiaSystem finalDia;
 
+    void Start()
+    {
+        sonidoFinal.SetActive(false);
+    }
 
     void Update()
     {
@@ -74,6 +79,7 @@ public class coche : MonoBehaviour
         loseShake.SetTrigger("loseShake");
         Instantiate(explosion, transform.position, Quaternion.identity);
         Destroy(gameObject);
+        sonidoFinal.SetActive(true);
     }
 
     public void Shake()
