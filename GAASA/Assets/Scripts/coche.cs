@@ -11,6 +11,8 @@ public class coche : MonoBehaviour
     public Animator loseShake;
     public ParticleSystem explosion;
     public GameObject sonidoFinal;
+    public GameObject motor;
+    public GameObject jabalies;
 
     private float timeElapsed = 0;
     public GameObject[] objetos;
@@ -80,6 +82,8 @@ public class coche : MonoBehaviour
         Instantiate(explosion, transform.position, Quaternion.identity);
         Destroy(gameObject);
         sonidoFinal.SetActive(true);
+        Destroy(motor);
+        Destroy(jabalies);
     }
 
     public void Shake()
