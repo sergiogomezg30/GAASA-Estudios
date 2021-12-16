@@ -743,6 +743,10 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 7788641313084195273, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 0b261c334af91db4e9390551f6ddeee5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
 --- !u!1001 &274221877
@@ -778,7 +782,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7067308011243967036, guid: f877884fdc378364695ace7a1f77bd5b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.877121
+      value: 17.889252
       objectReference: {fileID: 0}
     - target: {fileID: 7067308011243967036, guid: f877884fdc378364695ace7a1f77bd5b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1296,6 +1300,10 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7788641313084195273, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b33200029a250f745b7762f7e7fca918, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
 --- !u!1 &383898391 stripped
@@ -2199,6 +2207,10 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 7788641313084195273, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 0b261c334af91db4e9390551f6ddeee5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
 --- !u!1 &1038377079
@@ -3268,6 +3280,10 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 7788641313084195273, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b5f602ca8958f1c49bd6c0ead5440275, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 397baf2a42870084c981ffe8342c35cf, type: 3}
 --- !u!1001 &1572621233
