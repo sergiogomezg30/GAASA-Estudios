@@ -67,7 +67,8 @@ public class controlPersonaje : MonoBehaviour, IDondeMiro
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hitInfo)) {
                 if (hitInfo.collider.gameObject.CompareTag("suelo")) {
-                    target = hitInfo.point;
+                    //target = hitInfo.point;
+                    SetTarget(hitInfo.point);
                 }
             }
 
