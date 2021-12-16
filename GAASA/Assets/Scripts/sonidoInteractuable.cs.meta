@@ -3,7 +3,9 @@ guid: ead2185a6b1963443abb597e2d5b9ef6
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - mouseEncima: {fileID: 8300000, guid: bc7f7f9afeae0a14bacc185aa320f99a, type: 3}
+  - mouseClic: {fileID: 8300000, guid: a57953b119bade849b5ed61f00ad12aa, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

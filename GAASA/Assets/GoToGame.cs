@@ -12,10 +12,21 @@ public class GoToGame : MonoBehaviour
     public Animator cocheAnim;
     public float aumento = 0.15f;
     public string nombreJuego;
+    public AudioClip motorEncendido;
+    public GameObject motor;
 
-    //Pequeño pop para resaltar que el objeto es interactuable
+    private AudioSource audioSource;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        motor.SetActive(false);
+    }
+
+    //Pequeï¿½o pop para resaltar que el objeto es interactuable
     void OnMouseEnter()
     {
+        audioSource.PlayOneShot(motorEncendido);
         this.transform.localScale += new Vector3(aumento, aumento, 0);
     }
 
@@ -26,7 +37,7 @@ public class GoToGame : MonoBehaviour
 
     void OnMouseDown()
     {
-        
+        motor.SetActive(true);
         //Si clickeas, se inicia una animacion.
         this.transform.localScale -= new Vector3(aumento, aumento, 0);
 

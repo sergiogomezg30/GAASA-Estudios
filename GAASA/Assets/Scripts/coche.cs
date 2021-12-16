@@ -13,16 +13,19 @@ public class coche : MonoBehaviour
     public GameObject sonidoFinal;
     public GameObject motor;
     public GameObject jabalies;
+    public AudioClip golpe;
 
     private float timeElapsed = 0;
     public GameObject[] objetos;
     [SerializeField]
     private float manadaJabalies = 90;
+    private AudioSource audioSource;
 
     [SerializeField] private FinalDiaSystem finalDia;
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         sonidoFinal.SetActive(false);
     }
 
@@ -89,5 +92,10 @@ public class coche : MonoBehaviour
     public void Shake()
     {
         shakeOnHit.SetTrigger("shake");
+    }
+
+    public void PlaySound()
+    {
+        audioSource.PlayOneShot(golpe);
     }
 }
