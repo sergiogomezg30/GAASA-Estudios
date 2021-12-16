@@ -155,8 +155,16 @@ PrefabInstance:
       value: PuertaPiso2
       objectReference: {fileID: 0}
     - target: {fileID: 2333104727714838204, guid: 4c2729f917bda1647b251c0e3d576300, type: 3}
+      propertyPath: m_Size.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2333104727714838204, guid: 4c2729f917bda1647b251c0e3d576300, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2333104727714838205, guid: 4c2729f917bda1647b251c0e3d576300, type: 3}
+      propertyPath: m_Size.z
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2333104727714838205, guid: 4c2729f917bda1647b251c0e3d576300, type: 3}
       propertyPath: m_Enabled
@@ -18871,11 +18879,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7067308011243967036, guid: f877884fdc378364695ace7a1f77bd5b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.07091522
+      value: -0.07095337
       objectReference: {fileID: 0}
     - target: {fileID: 7067308011243967036, guid: f877884fdc378364695ace7a1f77bd5b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.582031
+      value: 11.581945
       objectReference: {fileID: 0}
     - target: {fileID: 7067308011243967036, guid: f877884fdc378364695ace7a1f77bd5b, type: 3}
       propertyPath: m_LocalPosition.z
