@@ -888,8 +888,8 @@ MonoBehaviour:
   golesImages: {fileID: 974303663}
   celebracionImage: {fileID: 218899200}
   imagenes:
-  - {fileID: 288678606837992959, guid: 31a8f0432e12de147b80f89297d34d6c, type: 3}
-  - {fileID: 8075551412400741563, guid: 31a8f0432e12de147b80f89297d34d6c, type: 3}
+  - {fileID: 3582486244436168302, guid: 86189ae49047a2449aba9d99575c49fc, type: 3}
+  - {fileID: 4240023315761239408, guid: 86189ae49047a2449aba9d99575c49fc, type: 3}
   m_panelSeguirJugando: {fileID: 307483856}
 --- !u!4 &210186561
 Transform:
