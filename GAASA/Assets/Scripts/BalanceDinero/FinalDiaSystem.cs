@@ -99,6 +99,27 @@ public class FinalDiaSystem : MonoBehaviour
                     gastosVariablesCant[0].text = (-diaActual.gastosExtras[1].coste).ToString();
                 }
                 break;
+            
+            case 3:
+                if (!FinalDiaData.cocheArreglado)   //como no se modifica despues del abuelo la usa para saber si son medicinas suaves o fuertes
+                {
+                    //gastos medicos solo
+                    gastosVariablesText[0].gameObject.SetActive(true);
+                    gastosVariablesCant[0].transform.parent.gameObject.SetActive(true);
+
+                    gastosVariablesText[0].text = diaActual.gastosExtras[1].nombreGasto;        //medicinas fuertes
+                    gastosVariablesCant[0].text = (-diaActual.gastosExtras[1].coste).ToString();
+                }
+                else
+                {
+                    //gastos medicos solo
+                    gastosVariablesText[0].gameObject.SetActive(true);
+                    gastosVariablesCant[0].transform.parent.gameObject.SetActive(true);
+
+                    gastosVariablesText[0].text = diaActual.gastosExtras[0].nombreGasto;        //medicinas suaves
+                    gastosVariablesCant[0].text = (-diaActual.gastosExtras[0].coste).ToString();
+                }
+                break;
 
             default:
                 Debug.LogError("Este día no está implementado en los 'case' del codigo!!");

@@ -14,9 +14,12 @@ public class PorteriaController : MonoBehaviour
 
     [SerializeField] private ThinkFutbol ninoQueDispara;
     private float incrementoSpeed = 1.25f;
+    private string nombreNinoQueDispara = "Daniel";
 
     private int goles, paradas;
     private float tiempoEntreRondas;
+
+    [SerializeField] private UnityEngine.UI.Button buttonVolverJugar; 
 
     void Start()
     {
@@ -34,8 +37,9 @@ public class PorteriaController : MonoBehaviour
         paradas = 0;
         tiempoEntreRondas = 2f;
 
-        //UIMinijuegoFutbolSystem.Instance.SetGolesUI(goles);
-        //UIMinijuegoFutbolSystem.Instance.SetParadasUI(paradas);
+        buttonVolverJugar.onClick.AddListener(Restart);
+
+        StartJugarFutbol();
     }
 
     /////////////////////////////////////////////////////
@@ -43,10 +47,6 @@ public class PorteriaController : MonoBehaviour
     /////////////////////////////////////////////////////
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            ninoQueDispara.Shoot();
-        }
         if (Input.GetKeyDown(KeyCode.R))
         {
             Restart();
@@ -82,6 +82,36 @@ public class PorteriaController : MonoBehaviour
         }
     }
 
+    private void StartJugarFutbol()
+    {
+        GameEvents.Instance.onFinishDialogue += PrimerDisparo;
+        DialogueSystem.Instance.AddNewDialogue(new string[] { "Yo disparo y tú me paras", "Si marco 8 te he ganado", "Y si me paras 8 ganas tú" },
+                                                                    nombreNinoQueDispara,
+                                                                    ninoQueDispara.gameObject.GetComponent<SpriteRenderer>(),
+                                                                    true);
+    }
+
+    public void RemovePrimerDisparo()
+    {
+        GameEvents.Instance.onFinishDialogue -= PrimerDisparo;
+    }
+
+    #region Evento PrimerDisparo
+    private void PrimerDisparo()
+    {
+        StartCoroutine(Empezando());
+        GameEvents.Instance.onFinishDialogue -= PrimerDisparo;
+    }
+    IEnumerator Empezando()
+    {
+        //poner aqui el pop del "A JUGAR"
+
+        yield return new WaitForSeconds(2f);
+
+        ninoQueDispara.Shoot();     //despues de aparecer el pop se empieza a jugar
+    }
+    #endregion
+
     private void ResetAll()
     {
         ninoQueDispara.ResetShot();
@@ -94,30 +124,31 @@ public class PorteriaController : MonoBehaviour
         UIMinijuegoFutbolSystem.Instance.FinCelebracion();
     }
 
-    /// <summary>
-    /// FUNCION PARA TESTEAR
-    /// AL FINAL NO DEBERIA SER LLAMADA POR NADA
-    /// </summary>
     private void Restart()
     {
         UIMinijuegoFutbolSystem.Instance.RestartUI();
         goles = 0;
         paradas = 0;
-        ninoQueDispara.pelotaSpeed += -(paradas * incrementoSpeed) + (goles * incrementoSpeed / 2);
+        //ninoQueDispara.pelotaSpeed += -(paradas * incrementoSpeed) + (goles * incrementoSpeed / 2);
+        ninoQueDispara.pelotaSpeed = 10;
         ResetAll();
+
+        PrimerDisparo();
     }
 
     private void FinFutbol()
     {
+        GameEvents.Instance.onFinishDialogue += (() => UIMinijuegoFutbolSystem.Instance.panelSeguirJugando.SetActive(true));
+
         if (paradas >= 8) { //hemos ganado parando
-            DialogueSystem.Instance.AddNewDialogue(new string[] { "¡Jobar!", "Pues al final sí que eres buen portero", "¿Mañana otro?" },
-                                                                    "Daniel",
+            DialogueSystem.Instance.AddNewDialogue(new string[] { "¡Jobar!", "Pues al final sí que eres buen portero", "¿Revancha?" },
+                                                                    nombreNinoQueDispara,
                                                                     ninoQueDispara.gameObject.GetComponent<SpriteRenderer>(),
                                                                     true);
         }
         else {  //hemos perdido y lo hemos llamada por los goles
-            DialogueSystem.Instance.AddNewDialogue(new string[] { "¡Te he ganado!", "Me ha gustado jugar contigo", "¿Mañana quieres repetir?" },
-                                                                    "Daniel",
+            DialogueSystem.Instance.AddNewDialogue(new string[] { "¡Te he ganado!", "Me ha gustado jugar contigo", "Te dejo otro intento si quieres jeje" },
+                                                                    nombreNinoQueDispara,
                                                                     ninoQueDispara.gameObject.GetComponent<SpriteRenderer>(),
                                                                     true);
         }

@@ -141,6 +141,8 @@ public class DialogueSystem : MonoBehaviour
         //resetear el escalado porsi
         image1.gameObject.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
         image2.gameObject.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
+
+        GameEvents.Instance.FinishDialogue();
     }
 
     IEnumerator TypeSentence()

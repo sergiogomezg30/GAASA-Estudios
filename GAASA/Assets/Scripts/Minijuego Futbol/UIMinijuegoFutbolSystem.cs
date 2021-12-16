@@ -16,6 +16,9 @@ public class UIMinijuegoFutbolSystem : MonoBehaviour
     //private Vector2 originRTsize;
     private int originHeightWidth;
 
+    [SerializeField] private GameObject m_panelSeguirJugando;
+    public GameObject panelSeguirJugando { get => m_panelSeguirJugando; }
+
     void Awake()
     {
         if (Instance != null && Instance != this) {
@@ -32,7 +35,7 @@ public class UIMinijuegoFutbolSystem : MonoBehaviour
 
     private void Start()
     {
-        //apagar las imagenes de paradas y goles
+        //apagar las imagenes de paradas y goles, y el panel SeguirJugando
         RestartUI();
 
         //que de primeras la imagen de celeracion esté apagada
@@ -87,10 +90,6 @@ public class UIMinijuegoFutbolSystem : MonoBehaviour
         celebracionImage.enabled = false;
     }
 
-    /// <summary>
-    /// NO LLAMAR A ESTA FUNCION DESDE NINGUN LADO
-    /// ESTA public PARA TESTING
-    /// </summary>
     public void RestartUI()
     {
         for (int i = 0; i < paradasImages.childCount; i++)
@@ -101,5 +100,7 @@ public class UIMinijuegoFutbolSystem : MonoBehaviour
         {
             golesImages.GetChild(i).gameObject.SetActive(false);
         }
+
+        panelSeguirJugando.SetActive(false);
     }
 }
