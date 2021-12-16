@@ -9,11 +9,15 @@ public class ThinkFutbol : MonoBehaviour
     private Vector3 originPosPelota;
     private Vector3 pelotaTarget;
     public float pelotaSpeed = 20f;
+    public AudioClip chutar;
 
     [HideInInspector] public bool hasShot;
 
+    private AudioSource audioSource;
+
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         originPosPelota = pelota.transform.position;
         pelotaTarget = originPosPelota;
 
@@ -25,8 +29,8 @@ public class ThinkFutbol : MonoBehaviour
     }
 
     /// <summary>
-    /// Esta funcion la he creado para evitar un bug que ocurría a veces
-    /// Era que si parabas y habías llegado un poco justo pues la pelota seguía avanzando
+    /// Esta funcion la he creado para evitar un bug que ocurrï¿½a a veces
+    /// Era que si parabas y habï¿½as llegado un poco justo pues la pelota seguï¿½a avanzando
     /// Por lo que se sumaba una parada y un gol
     /// </summary>
     public void StopPelota()
@@ -36,6 +40,7 @@ public class ThinkFutbol : MonoBehaviour
 
     public void Shoot()
     {
+        audioSource.PlayOneShot(chutar);
         pelotaTarget = porteria.RandPosToShoot().transform.position;
         Debug.Log("tornado de fuego a " + pelotaTarget);
 
