@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PorteriaController : MonoBehaviour
 {
+    public AudioClip parada;
+    public AudioClip gol;
+    private AudioSource audioSource;
+
     private List<DisparoController> posiblesDisparos;
 
     [SerializeField] private GameObject portero;
@@ -23,6 +27,7 @@ public class PorteriaController : MonoBehaviour
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         posiblesDisparos = new List<DisparoController>();
         //meter las posibles direcciones de disparo
         for (int i = 0; i < transform.childCount; i++) {
@@ -63,16 +68,16 @@ public class PorteriaController : MonoBehaviour
         UIMinijuegoFutbolSystem.Instance.Celebrar(parada);
         yield return new WaitForSeconds(tiempoEntreRondas);
 
-        if (parada) {   //si has parada pues el siguiente disparo va más rápido
+        if (parada) {   //si has parada pues el siguiente disparo va mï¿½s rï¿½pido
             ninoQueDispara.pelotaSpeed += incrementoSpeed;
         }
         else {
-            ninoQueDispara.pelotaSpeed -= incrementoSpeed / 2;  //no se reduce tan rapido para que sea más dificil
+            ninoQueDispara.pelotaSpeed -= incrementoSpeed / 2;  //no se reduce tan rapido para que sea mï¿½s dificil
         }
         Debug.Log("la pelota va a ir a " + ninoQueDispara.pelotaSpeed);
         ResetAll();
 
-        yield return new WaitForSeconds(0.5f);  //dar un pequeño margen de tiempo para reaccionar y disparar
+        yield return new WaitForSeconds(0.5f);  //dar un pequeï¿½o margen de tiempo para reaccionar y disparar
 
         if (paradas >= 8 || goles >= 8) {   //hemos ganado o perdido
             FinFutbol();
@@ -85,7 +90,7 @@ public class PorteriaController : MonoBehaviour
     private void StartJugarFutbol()
     {
         GameEvents.Instance.onFinishDialogue += PrimerDisparo;
-        DialogueSystem.Instance.AddNewDialogue(new string[] { "Yo disparo y tú me paras", "Si marco 8 te he ganado", "Y si me paras 8 ganas tú" },
+        DialogueSystem.Instance.AddNewDialogue(new string[] { "Yo disparo y tï¿½ me paras", "Si marco 8 te he ganado", "Y si me paras 8 ganas tï¿½" },
                                                                     nombreNinoQueDispara,
                                                                     ninoQueDispara.gameObject.GetComponent<SpriteRenderer>(),
                                                                     true);
@@ -141,13 +146,13 @@ public class PorteriaController : MonoBehaviour
         GameEvents.Instance.onFinishDialogue += (() => UIMinijuegoFutbolSystem.Instance.panelSeguirJugando.SetActive(true));
 
         if (paradas >= 8) { //hemos ganado parando
-            DialogueSystem.Instance.AddNewDialogue(new string[] { "¡Jobar!", "Pues al final sí que eres buen portero", "¿Revancha?" },
+            DialogueSystem.Instance.AddNewDialogue(new string[] { "ï¿½Jobar!", "Pues al final sï¿½ que eres buen portero", "ï¿½Revancha?" },
                                                                     nombreNinoQueDispara,
                                                                     ninoQueDispara.gameObject.GetComponent<SpriteRenderer>(),
                                                                     true);
         }
         else {  //hemos perdido y lo hemos llamada por los goles
-            DialogueSystem.Instance.AddNewDialogue(new string[] { "¡Te he ganado!", "Me ha gustado jugar contigo", "Te dejo otro intento si quieres jeje" },
+            DialogueSystem.Instance.AddNewDialogue(new string[] { "ï¿½Te he ganado!", "Me ha gustado jugar contigo", "Te dejo otro intento si quieres jeje" },
                                                                     nombreNinoQueDispara,
                                                                     ninoQueDispara.gameObject.GetComponent<SpriteRenderer>(),
                                                                     true);
@@ -172,6 +177,7 @@ public class PorteriaController : MonoBehaviour
     {
         goles++;
         UIMinijuegoFutbolSystem.Instance.SetGolesUI(goles);
+        audioSource.PlayOneShot(gol);
 
         StartCoroutine(AnotherRound(false));
     }
@@ -180,6 +186,7 @@ public class PorteriaController : MonoBehaviour
     {
         paradas++;
         UIMinijuegoFutbolSystem.Instance.SetParadasUI(paradas);
+        audioSource.PlayOneShot(parada);
 
         ninoQueDispara.StopPelota();
         StartCoroutine(AnotherRound(true));
