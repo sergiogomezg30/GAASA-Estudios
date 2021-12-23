@@ -16,7 +16,7 @@ MonoBehaviour:
   descriptionDia: "Yendo al trabajo se te ha estropeado el coche. Llamas a un compa\xF1ero
     y te ayuda con los viajes\n\n\xBFArreglas el coche?"
   gastosExtras:
-  - nombreGasto: Arreglar coche
-    coste: 150
+  - nombreGasto: "Arreglar veh\xEDculo"
+    coste: 2000
     esOpcional: 1
   nextDiaScene: dia2_def

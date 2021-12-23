@@ -19,12 +19,12 @@ MonoBehaviour:
     final te toca ir al hospital del pueblo de al lado y te recetan unas medicinas'
   gastosExtras:
   - nombreGasto: Arreglar coche
-    coste: 150
+    coste: 2000
     esOpcional: 0
-  - nombreGasto: Medicinas suaves
-    coste: 5
+  - nombreGasto: Calmantes del dolor
+    coste: 100
     esOpcional: 0
-  - nombreGasto: Medicinas fuertes
-    coste: 8
+  - nombreGasto: Calmantes agresivos y ambulancia
+    coste: 200
     esOpcional: 0
   nextDiaScene: Dia3_def
