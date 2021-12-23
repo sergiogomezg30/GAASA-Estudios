@@ -96,9 +96,9 @@ public class PorteriaController : MonoBehaviour
                                                                     true);
     }
 
-    public void RemovePrimerDisparo()
+    public void RemovePanelEvent()
     {
-        GameEvents.Instance.onFinishDialogue -= PrimerDisparo;
+        GameEvents.Instance.onFinishDialogue -= (() => UIMinijuegoFutbolSystem.Instance.panelSeguirJugando.SetActive(true));
     }
 
     #region Evento PrimerDisparo
@@ -109,9 +109,10 @@ public class PorteriaController : MonoBehaviour
     }
     IEnumerator Empezando()
     {
-        //poner aqui el pop del "A JUGAR"
+        yield return new WaitForSeconds(0.5f);
+        UIMinijuegoFutbolSystem.Instance.AJugar();      //pop del "A JUGAR"
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(2.5f);
 
         ninoQueDispara.Shoot();     //despues de aparecer el pop se empieza a jugar
     }

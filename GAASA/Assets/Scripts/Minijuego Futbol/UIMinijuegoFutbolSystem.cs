@@ -13,6 +13,9 @@ public class UIMinijuegoFutbolSystem : MonoBehaviour
     [SerializeField] private Image celebracionImage;
     [SerializeField] private Sprite[] imagenes; //[0] es la de parada y [1] es la de gol
     private RectTransform celebracionRT;
+
+    [SerializeField] private Image aJugarImage;
+    private RectTransform aJugarRT;
     //private Vector2 originRTsize;
     private int originHeightWidth;
 
@@ -29,6 +32,7 @@ public class UIMinijuegoFutbolSystem : MonoBehaviour
         }
 
         celebracionRT = celebracionImage.gameObject.GetComponent<RectTransform>();
+        aJugarRT = aJugarImage.gameObject.GetComponent<RectTransform>();
         //originRTsize = celebracionRT.sizeDelta;
         originHeightWidth = 200;
     }
@@ -50,6 +54,17 @@ public class UIMinijuegoFutbolSystem : MonoBehaviour
     public void SetGolesUI(int goles)
     {
         golesImages.GetChild(goles - 1).gameObject.SetActive(true);
+    }
+
+    public void AJugar()
+    {
+        aJugarImage.enabled = true;                                                         //encender la imagen
+        float relation = aJugarImage.sprite.rect.height / aJugarImage.sprite.rect.width;
+
+        aJugarRT.sizeDelta = new Vector2(originHeightWidth, relation * originHeightWidth);  //poner la resolucion bien
+        LeanTween.size(aJugarRT, new Vector2(aJugarRT.sizeDelta.x * 1.5f, aJugarRT.sizeDelta.y * 1.5f), 0.6f)
+            .setOnComplete(() => LeanTween.size(aJugarRT, new Vector2(originHeightWidth, relation * originHeightWidth), 0.6f)
+            .setOnComplete(() => aJugarImage.enabled = false));                             //apagar la imagen
     }
 
     public void Celebrar(bool parada)
