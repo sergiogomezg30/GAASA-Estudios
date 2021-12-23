@@ -12,7 +12,7 @@ public class CambiarEscena : MonoBehaviour
     {
         //para testear, a lo mejor los datos hay que cambiarlos
         FinalDiaData.diaActual = 1;
-        FinalDiaData.ahorrosMoney = 1000;
+        FinalDiaData.ahorrosMoney = 10000;
         FinalDiaData.cocheArreglado = true;
         ///////////////////////////////////////////////////////////////////
     }

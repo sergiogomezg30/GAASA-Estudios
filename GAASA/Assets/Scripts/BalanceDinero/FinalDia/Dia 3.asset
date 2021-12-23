@@ -14,12 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dia: 3
   descriptionDia: "Has perdido el bus que te llevaba a casa\nHas conocido a un chico
-    en la misma situaci\xF3n y hab\xE9is estado jugando f\xFAtbol"
+    en la misma situaci\xF3n y hab\xE9is estado jugando f\xFAtbol\nHas hecho un nuevo
+    amigo!"
   gastosExtras:
-  - nombreGasto: Medicinas suaves
+  - nombreGasto: "Billete de autob\xFAs"
     coste: 5
-    esOpcional: 0
-  - nombreGasto: Medicinas fuertes
-    coste: 8
     esOpcional: 0
   nextDiaScene: menu2
