@@ -8018,7 +8018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObject: {fileID: 1247053726}
-  tiempo: 4
+  tiempo: 5
 --- !u!1 &1252856405
 GameObject:
   m_ObjectHideFlags: 0

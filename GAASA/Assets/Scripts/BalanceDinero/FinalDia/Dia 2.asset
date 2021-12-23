@@ -13,18 +13,26 @@ MonoBehaviour:
   m_Name: Dia 2
   m_EditorClassIdentifier: 
   dia: 2
-  descriptionDia: 'Estabas reparando unos cables, consigues hacerlo pero te caes
+  descriptionDia: 'El abuelo se tropezo y se cayo arreglando los cables...
 
-    Al
-    final te toca ir al hospital del pueblo de al lado y te recetan unas medicinas'
+    Si
+    reparaste el coche, le llevas a tiempo al hospital.
+
+    Le recetan a Joan un
+    calmante suave
+
+    Si no reparaste el coche, debes llamar a un transporte privado
+
+    y
+    le recetan calmantes mas agresivos y costosos a Joan'
   gastosExtras:
   - nombreGasto: Arreglar coche
     coste: 2000
+    esOpcional: 1
+  - nombreGasto: Calmantes suave
+    coste: 20
     esOpcional: 0
-  - nombreGasto: Calmantes del dolor
-    coste: 100
-    esOpcional: 0
-  - nombreGasto: Calmantes agresivos y ambulancia
-    coste: 200
+  - nombreGasto: Calmantes agresivos y transporte
+    coste: 350
     esOpcional: 0
   nextDiaScene: Dia3_def
