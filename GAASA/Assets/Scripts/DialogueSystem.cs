@@ -142,7 +142,7 @@ public class DialogueSystem : MonoBehaviour
         image1.gameObject.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
         image2.gameObject.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
 
-        GameEvents.Instance.FinishDialogue();
+        GameEvents.Instance.FinishDialogue(npcName);
     }
 
     IEnumerator TypeSentence()

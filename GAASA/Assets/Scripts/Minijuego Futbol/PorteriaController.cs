@@ -98,14 +98,17 @@ public class PorteriaController : MonoBehaviour
 
     public void RemovePanelEvent()
     {
-        GameEvents.Instance.onFinishDialogue -= (() => UIMinijuegoFutbolSystem.Instance.panelSeguirJugando.SetActive(true));
+        //aún no termino de entender como funcionan las expresiones lambda XD
+        GameEvents.Instance.onFinishDialogue -= ((string npcName) => UIMinijuegoFutbolSystem.Instance.panelSeguirJugando.SetActive(true));
     }
 
     #region Evento PrimerDisparo
-    private void PrimerDisparo()
+    private void PrimerDisparo(string npcName)  //este parametro es para el GameEvents y así ser más menos escalable
     {
-        StartCoroutine(Empezando());
-        GameEvents.Instance.onFinishDialogue -= PrimerDisparo;
+        if (npcName == nombreNinoQueDispara) {
+            StartCoroutine(Empezando());
+            GameEvents.Instance.onFinishDialogue -= PrimerDisparo;
+        }
     }
     IEnumerator Empezando()
     {
@@ -139,12 +142,12 @@ public class PorteriaController : MonoBehaviour
         ninoQueDispara.pelotaSpeed = 10;
         ResetAll();
 
-        PrimerDisparo();
+        PrimerDisparo(nombreNinoQueDispara);
     }
 
     private void FinFutbol()
     {
-        GameEvents.Instance.onFinishDialogue += (() => UIMinijuegoFutbolSystem.Instance.panelSeguirJugando.SetActive(true));
+        GameEvents.Instance.onFinishDialogue += ((string npcName) => UIMinijuegoFutbolSystem.Instance.panelSeguirJugando.SetActive(true));
 
         if (paradas >= 8) { //hemos ganado parando
             DialogueSystem.Instance.AddNewDialogue(new string[] { "�Jobar!", "Pues al final s� que eres buen portero", "�Revancha?" },

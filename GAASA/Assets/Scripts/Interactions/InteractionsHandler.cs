@@ -8,7 +8,8 @@ public class InteractionsHandler : MonoBehaviour
     private Vector3 targetPosition;
 
     private Camera cam;
-    private Interactable actualInteraction;
+    private Interactable _actualInteraction;
+    public Interactable actualInteraction { get => _actualInteraction; }
 
     [HideInInspector] public bool isInAnInteraction;
 
@@ -25,10 +26,10 @@ public class InteractionsHandler : MonoBehaviour
 
             if (!isInAnInteraction && Physics.Raycast(ray, out RaycastHit hitInfo)) {
                 targetPosition = hitInfo.point;
-                actualInteraction = hitInfo.collider.gameObject.GetComponent<Interactable>();
+                _actualInteraction = hitInfo.collider.gameObject.GetComponent<Interactable>();
 
-                if (actualInteraction != null) {
-                    if (actualInteraction.GetTriggerCollider().bounds.Intersects(player.GetComponent<BoxCollider>().bounds)) {
+                if (_actualInteraction != null) {
+                    if (_actualInteraction.GetTriggerCollider().bounds.Intersects(player.GetComponent<BoxCollider>().bounds)) {
                         StartInteraction();
                     }
                     else { 
@@ -41,11 +42,11 @@ public class InteractionsHandler : MonoBehaviour
 
     public Interactable GetActualInteraction()
     {
-        return actualInteraction;
+        return _actualInteraction;
     }
     public void NullifyActualInteraction()
     {
-        actualInteraction = null;
+        _actualInteraction = null;
     }
 
     public void StartInteraction()
@@ -54,16 +55,16 @@ public class InteractionsHandler : MonoBehaviour
 
         player.canMove = false;  //desactivar control personaje hasta que se acabe de interactuar
 
-        actualInteraction.GetPhysicalCollider().enabled = true; //puedes chocarte solamente cuando vas hacia ello, si no lo atraviesas
-        actualInteraction.Interact();
+        _actualInteraction.GetPhysicalCollider().enabled = true; //puedes chocarte solamente cuando vas hacia ello, si no lo atraviesas
+        _actualInteraction.Interact();
     }
     public void InteractionFinished()
     {
         player.canMove = true;
 
-        actualInteraction.GetPhysicalCollider().enabled = false;
+        _actualInteraction.GetPhysicalCollider().enabled = false;
 
         isInAnInteraction = false;
-        actualInteraction = null;
+        _actualInteraction = null;
     }
 }

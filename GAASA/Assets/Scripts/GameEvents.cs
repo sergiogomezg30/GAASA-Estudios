@@ -17,11 +17,11 @@ public class GameEvents : MonoBehaviour
         }
     }
 
-    public event Action onFinishDialogue;
-    public void FinishDialogue()
+    public event Action<string> onFinishDialogue;
+    public void FinishDialogue(string npcName)
     {
         if (onFinishDialogue != null) {
-            onFinishDialogue();
+            onFinishDialogue(npcName);
         }
     }
 }

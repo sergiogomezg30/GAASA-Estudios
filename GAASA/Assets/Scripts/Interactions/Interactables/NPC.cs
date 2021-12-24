@@ -25,4 +25,9 @@ public class NPC : Interactable, IDondeMiro
         DialogueSystem.Instance.AddNewDialogue(dialogueNPC, nameNPC, gameObject.GetComponent<SpriteRenderer>());
         Debug.Log("I am " + nameNPC + " and I have " + dialogueNPC.Length + "sentences");
     }
+
+    public string GetNameNPC()
+    {
+        return nameNPC;
+    }
 }
