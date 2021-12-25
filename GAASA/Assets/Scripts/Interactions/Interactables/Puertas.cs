@@ -41,6 +41,8 @@ public class Puertas : Interactable
 
         interactionsHandler.InteractionFinished();  //lo pongo aquí ya que no hay ningun evento que lo haga acabar
 
+        GameEvents.Instance.DoorExit();     //llamar a los eventos (si hay)
+
         yield return null;
     }
 }

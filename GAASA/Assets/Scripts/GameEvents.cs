@@ -24,4 +24,12 @@ public class GameEvents : MonoBehaviour
             onFinishDialogue(npcName);
         }
     }
+
+    public event Action onDoorExit;
+    public void DoorExit()
+    {
+        if (onDoorExit != null) {
+            onDoorExit();
+        }
+    }
 }
