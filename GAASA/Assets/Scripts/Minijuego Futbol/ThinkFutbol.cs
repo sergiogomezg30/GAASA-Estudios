@@ -6,6 +6,7 @@ public class ThinkFutbol : MonoBehaviour
 {
     [SerializeField] private PorteriaController porteria;
     [SerializeField] private GameObject pelota;
+    private Animator pelotaAnimator;
     private Vector3 originPosPelota;
     private Vector3 pelotaTarget;
     public float pelotaSpeed = 20f;
@@ -17,6 +18,7 @@ public class ThinkFutbol : MonoBehaviour
 
     private void Start()
     {
+        pelotaAnimator = pelota.GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         originPosPelota = pelota.transform.position;
         pelotaTarget = originPosPelota;
@@ -36,6 +38,8 @@ public class ThinkFutbol : MonoBehaviour
     public void StopPelota()
     {
         pelotaTarget = pelota.transform.position;
+        pelotaAnimator.SetBool("chute", false);
+        pelota.transform.rotation = Quaternion.Euler(0, 0, 0);
     }
 
     public void Shoot()
@@ -44,11 +48,28 @@ public class ThinkFutbol : MonoBehaviour
         pelotaTarget = porteria.RandPosToShoot().transform.position;
         Debug.Log("tornado de fuego a " + pelotaTarget);
 
+        if (pelotaTarget.x > 0) {
+            if (pelotaTarget.y > 0)
+                pelota.transform.rotation = Quaternion.Euler(0, 0, -35);
+            else
+                pelota.transform.rotation = Quaternion.Euler(0, 0, -70);
+        }
+        else {
+            if (pelotaTarget.y > 0)
+                pelota.transform.rotation = Quaternion.Euler(0, 0, 35);
+            else
+                pelota.transform.rotation = Quaternion.Euler(0, 0, 70);
+        }
+
+        pelotaAnimator.SetBool("chute", true);
+
         hasShot = true;
     }
 
     public void ResetShot()
     {
+        pelotaAnimator.SetBool("chute", false);
+        pelota.transform.rotation = Quaternion.Euler(0, 0, 0);
         pelota.transform.position = originPosPelota;
         pelotaTarget = originPosPelota;
 
