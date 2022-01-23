@@ -29,7 +29,7 @@ public class onClickEvent : MonoBehaviour
         this.transform.localScale -= new Vector3(aumento, aumento, 0);
 
         //Encener/Apagar objeto
-        if (encender) { objetoActivable.SetActive(true); }
+        if (encender) { objetoActivable.SetActive(true); Destroy(this); }
         else { 
             //objetoActivable.SetActive(false);
             //finalDia.ShowFinalDayUI();
